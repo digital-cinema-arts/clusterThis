@@ -1,0 +1,48 @@
+//
+//  VRAYprocedurals
+//
+//  This file contains the definitions for procedural objects loaded
+//  into mantra.  The first column is the name of the procedure.  The
+//  second column is the location of the dynamic object which handles
+//  the procedure.  The dynamic object is loaded using path searching
+//  on the HOUDINI_DSO_PATH variable (see hconfig for more
+//  information)
+//
+// Since Windows dynamic objects have a different file extension than
+// most unix platforms, we define a macro which makes the correct
+// filename.  We also simplify the path construction a little.
+//
+
+// If a WINDOWS machine ...
+#if $HOUDINI_OS == "Windows"
+    #define DSO_FILE(filename)	mantra/filename.dll
+#endif
+
+#if $HOUDINI_OS == 'Linux-x86_64'
+	#define DSO_FILE(filename)	/dca/common/lib/houdini/dso_x86_64/mantra/filename.so
+#endif
+
+#if $HOUDINI_OS == 'Linux'
+ 	#define DSO_FILE(filename)	/dca/common/lib/houdini/dso/mantra/filename.so
+#endif
+
+// If a Mac OSX machine
+#if $HOUDINI_OS == "OSX"
+ 	#define DSO_FILE(filename)	/dca/common/lib/houdini/dso_darwin/mantra/filename.dylib
+#endif
+
+
+clusterThis	    DSO_FILE(VRAY_clusterThis)
+
+demosprite      DSO_FILE(VRAY_DemoSprite)
+demostamp       DSO_FILE(VRAY_DemoStamp)
+demobox         DSO_FILE(VRAY_DemoBox)
+demofile        DSO_FILE(VRAY_DemoFile)
+demovolume      DSO_FILE(VRAY_DemoVolumeSphere)
+demomountain    DSO_FILE(VRAY_DemoMountain)
+
+
+// Make sure to undefine the macro before doing any further includes
+#undef DSO_FILE
+
+#include "$HFS/VRAYprocedural"
