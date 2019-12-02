@@ -1,0 +1,28 @@
+var structVRAY__clusterThis_1_1inst__mb__attr__ref__struct =
+[
+    [ "Alpha", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a71c259ea8dd029b559fd383c8cedf48c", null ],
+    [ "Cd", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a7df1633926f09162663ca9968222174f", null ],
+    [ "id", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#ada70a7f5945f300b792d523a9f842eb2", null ],
+    [ "inst_id", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a1aa39844a3468f80613b64414f3ea3fb", null ],
+    [ "material", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a1ae421e62f76f3c92b1403674e74208f", null ],
+    [ "N", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a2c966f4a72305da176f255ea054fdeb9", null ],
+    [ "pointAlpha", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a267099cf6c36e7ac3b4cc10d75e441c8", null ],
+    [ "pointBacktrack", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#aa285fe6ccc1d5e3e71e05d07e6e45383", null ],
+    [ "pointCd", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a95e1ddd058bf1da7da3996848c3a1920", null ],
+    [ "pointId", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a56172441b6027928a9b37281be359a31", null ],
+    [ "pointInstId", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#ab623e74f3f3daa7370fa95956c5e34d5", null ],
+    [ "pointMaterial", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a4a936a2529d3d23fbdd5290b33f15d0d", null ],
+    [ "pointN", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#ad411c5ce8989fd5183b061ae1222e156", null ],
+    [ "pointPscale", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#add1dfb75f02f2ec762818e6371c96857", null ],
+    [ "pointRadius", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a0e328a4012a1923b7b0c279406ad2905", null ],
+    [ "pointUp", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a795abeb80e829b6f6bfc8ad78940b515", null ],
+    [ "pointV", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a854aa6689772c40247b97636c3ded920", null ],
+    [ "pointVDBRadius", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a1f4a113bda9b265cdb1abd22c30d511b", null ],
+    [ "pointWeight", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#af395edf67cea597580710d39da9a1160", null ],
+    [ "pointWidth", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a33cbecfca942a7eab411db917fbb591b", null ],
+    [ "pscale", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#aff30a82c73fd3da72d68299a2d87e1f5", null ],
+    [ "radius", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#ab6c8c2f9a1f1e235d5a5afcac2a6d55c", null ],
+    [ "v", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#af2eace0cfaf291b50cd3054d40092c00", null ],
+    [ "weight", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#a5f98c1285c428cff5b532d20bdc2253e", null ],
+    [ "width", "structVRAY__clusterThis_1_1inst__mb__attr__ref__struct.html#ac4e9e79b109702610f48788d68593ecc", null ]
+];
