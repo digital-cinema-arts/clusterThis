@@ -17,6 +17,17 @@ allows access to render time data, add additional detail to scene.
  * CVEX processing of instanced geometry
  
  * Cache file stores data when generating deep shadow maps to optimize instancing.
+ 
+ 
+ 
+[Example #1](https://vimeo.com/55999099)
+
+[Example #2](https://vimeo.com/55141948)
+ 
+
+ 
+ 
+ 
 
 
 
