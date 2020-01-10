@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="faq" kind="page">
+    <compoundname>faq</compoundname>
+    <title>Frequently Asked Questions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="exampleScenes_1Contents">
+<title>Contents</title>
+<para><itemizedlist>
+<listitem><para><ref refid="faq_1sWhatIsClusterThis" kindref="member">What is clusterThis?</ref></para>
+</listitem><listitem><para><ref refid="faq_1sWhatLicense" kindref="member">What license is clusterThis distributed under?</ref></para>
+</listitem><listitem><para><ref refid="faq_1sContribute" kindref="member">How can I contribute to clusterThis?</ref></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="faq_1sWhatIsClusterThis">
+<title>What is clusterThis?</title>
+<para>The <bold>clusterThis</bold> mantra geometry instancing procedural DSO/OTL will instance geometry to incoming points and will process the point attributes in a number of ways for the instanced geometry. Delays geomtery instantiation until render time thus, reduces size of IFD file and network bandwidth, allows access to render time data, add additional detail to scene.</para>
+</sect1>
+<sect1 id="faq_1sWhatLicense">
+<title>What license is clusterThis distributed under?</title>
+<para>TO BE DONE.</para>
+</sect1>
+<sect1 id="faq_1sContribute">
+<title>How can I contribute to clusterThis?</title>
+<para>If you have bug reports or ideas for improvements or new features, please contact us! </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

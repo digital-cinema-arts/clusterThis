@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="overview" kind="page">
+    <compoundname>overview</compoundname>
+    <title>clusterThis Overview</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="exampleScenes_1Contents">
+<title>Contents</title>
+<para><itemizedlist>
+<listitem><para><ref refid="overview_1secParameters" kindref="member">Parameters</ref></para>
+</listitem><listitem><para><ref refid="overview_1secInstall" kindref="member">Installation</ref></para>
+</listitem><listitem><para><ref refid="overview_1secNotes" kindref="member">Notes</ref></para>
+</listitem><listitem><para><ref refid="overview_1secDesignNotes" kindref="member">secDesignNotes</ref></para>
+</listitem><listitem><para><ref refid="overview_1secDebugTips" kindref="member">Debug Tips</ref></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="overview_1secParameters">
+<title>Parameters</title>
+<para>The current set of parameters are:</para>
+<para><bold>Setup</bold> <bold>Tab:</bold> <itemizedlist>
+<listitem><para>Min/Max Bounds: The bounding box of the objects/volume being instanced </para>
+</listitem>
+<listitem><para>Use Geo File: The filename of th egeometry file to use instead point cloud from the IFD file. </para>
+</listitem>
+<listitem><para>Type: The type of geometry to instance </para>
+</listitem>
+<listitem><para>Num. Copies: Number of copies of the geometry to instance per point of input geometry </para>
+</listitem>
+<listitem><para>Recursion: Number of copies of the geometry per copy per point of input geometry </para>
+</listitem>
+<listitem><para>Radius: The distance from the center of the point to the instanced geometry </para>
+</listitem>
+<listitem><para>Size: The size (X, Y, Z) of the instanced geometry primitive </para>
+</listitem>
+<listitem><para>Frequency: Frequency X,Y,Z </para>
+</listitem>
+<listitem><para>Offset: Offset X,Y,Z </para>
+</listitem>
+<listitem><para>Instance Probability: Controls the amount of &quot;randomness&quot; in choosing to instance an object or not. </para>
+</listitem>
+<listitem><para>Instance Geometry File: Geometry disk file to be instanced (is there&apos;s no geo_fname point attribute) </para>
+</listitem>
+<listitem><para>Deferred Instancing: This will generate additional VRAY_Procedural objects, which then instance the geometry as needed by mantra. If unchecked, all the geometry will be instanced at one time </para>
+</listitem>
+<listitem><para>Motion Blur: Motion blur type: None, Velocity or Deformation </para>
+</listitem>
+<listitem><para>Shutter: The open and close shutter value for motion blur </para>
+</listitem>
+<listitem><para>Messages: The verbosity of the messages sent to the console during rendering</para>
+</listitem>
+</itemizedlist>
+<bold>Noise</bold> <bold>Tab:</bold> <itemizedlist>
+<listitem><para>Type: Simple noise generator noise types Perlin, Sparse, Alligator </para>
+</listitem>
+<listitem><para>Amplitude: Amplitude of noise applied to the position of the instanced geometry Noise Roughness: The &quot;roughness&quot; of the noise function </para>
+</listitem>
+<listitem><para>Roughness: Roughness of the generated noise </para>
+</listitem>
+<listitem><para>Fractal Depth: Depth of recursion for the noise generator </para>
+</listitem>
+<listitem><para>Attenuation: Amount of attenuation applied to the noise generator </para>
+</listitem>
+<listitem><para>Seed: Seed for the noise generator</para>
+</listitem>
+</itemizedlist>
+<bold>CVEX</bold> <bold>Tab:</bold> </para>
+<para><itemizedlist>
+<listitem><para>Instance: Will run CVEX on each instance </para>
+</listitem>
+<listitem><para>Pre-Process: Will run CVEX on incoming point cloud </para>
+</listitem>
+<listitem><para>Instance: Will run CVEX on the entire set of instanced geometry</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>CVEX Point Shader: The file name of the .vex shader to be used on points </para>
+</listitem>
+<listitem><para>Execute Point VEX Code: Execute the VEX code on the instanced points </para>
+</listitem>
+<listitem><para>CVEX Primitive Shader: The file name of the .vex shader to be used on prinitves </para>
+</listitem>
+<listitem><para>Execute Primitive VEX Code: Execute the VEX code on the instanced primitives</para>
+</listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>CVEX Vars (point) The point attributes sent to the CVEX code for processing </para>
+</listitem>
+<listitem><para>CVEX Vars (primitive) The primitive attributes sent to the CVEX code for processing</para>
+</listitem>
+</itemizedlist>
+<bold>Defaults</bold> <bold>Tab:</bold> <itemizedlist>
+<listitem><para>TODO</para>
+</listitem>
+</itemizedlist>
+<bold>Post</bold> Process <bold>Tab:</bold> <itemizedlist>
+<listitem><para>Enable </para>
+</listitem>
+<listitem><para>Particle Footprint </para>
+</listitem>
+<listitem><para>WS Units </para>
+</listitem>
+<listitem><para>Instance Offset </para>
+</listitem>
+<listitem><para>Voxel Size </para>
+</listitem>
+<listitem><para>Radius Min </para>
+</listitem>
+<listitem><para>Half Bandwidth </para>
+</listitem>
+<listitem><para>Fog Volume </para>
+</listitem>
+<listitem><para>Gradient Width </para>
+</listitem>
+<listitem><para>Falloff </para>
+</listitem>
+<listitem><para>Filter: Median Mean, Mean Curvature, Laplacian. Offset (with offset amount) </para>
+</listitem>
+<listitem><para>Position Influence </para>
+</listitem>
+<listitem><para>Velocity Influence </para>
+</listitem>
+<listitem><para>Normal Influence </para>
+</listitem>
+<listitem><para>Write Debug Files</para>
+</listitem>
+</itemizedlist>
+<bold>Misc</bold> <bold>Tab:</bold> <itemizedlist>
+<listitem><para>Temp File Path: Temporary file for the instanced geometry </para>
+</listitem>
+<listitem><para>Save the geometry in a temp cache file (for optimization) </para>
+</listitem>
+<listitem><para>Save temp cache file: Do not delete cache file (to save the temp geometry cache file for later use)</para>
+</listitem>
+</itemizedlist>
+</para>
+</sect1>
+<sect1 id="overview_1secInstall">
+<title>Installation</title>
+<para>To install the &quot;clusterThis&quot; mantra procedural DSO, there are 4 components that need to be installed: <linebreak/>
+ <linebreak/>
+ 1) The &quot;executable&quot; that runs when mantra calls the clusterThis functions <linebreak/>
+ 2) The VRAYprocedural configuration file to tell mantra where to find the clusterThis DSO or DLL <linebreak/>
+ 3) The OTL, which is the interface to the mantra geometry procedural allowing the user to control it&apos;s behaviour <linebreak/>
+ 4) The OpenVDB libraries <linebreak/>
+</para>
+<para><bold>Step</bold> <bold>1</bold>: <preformatted>
+The &quot;executables&quot;:
+VRAY_clusterThis.so
+VRAY_clusterThis.dylib</preformatted></para>
+<para><preformatted>Place one of these (depending on operating system) in a typical mantra DSO/DLL location, e.g.:
+$HOME/houdiniX.XX/dso/mantra/
+$JOB/houdiniX.XX/dso/mantra/
+</preformatted></para>
+<para><bold>Step</bold> <bold>2</bold>: <preformatted>
+The mantra procedural configuration file:
+VRAYprocedural</preformatted></para>
+<para><preformatted>Place this file (or append the contents to your current VRAYprocedural file) in a location searched by Houdini:
+$HOME/houdiniX.XX/
+$JOB/houdiniX.XX/
+</preformatted></para>
+<para><bold>Step</bold> <bold>3</bold>: <preformatted>
+Geometry Shader OTL:
+VM_GEO_clusterThis.otl</preformatted></para>
+<para><preformatted>Place this file in a location searched by Houdini:
+$HOME/houdiniX.XX/otls/
+$JOB/houdiniX.XX/otls/
+</preformatted></para>
+<para><bold>Step</bold> <bold>4</bold>: <preformatted>
+The Open VDB Libraries:
+Copy the openvdb lib files (libopenvdb.so&amp; libopenvdb_houdini.so) to a location on your system if you do not already have them installed.  Be sure to set the LD_LIBRARY_PATH if needed to find the libaries.
+</preformatted></para>
+</sect1>
+<sect1 id="overview_1secNotes">
+<title>Notes</title>
+<para>NOTES:</para>
+</sect1>
+<sect1 id="overview_1secDesignNotes">
+<title>secDesignNotes</title>
+<para>Flowcharts:</para>
+<para><bold>Overall</bold> mantra procedural call sequence: <ulink url="http://www.digitalcinemaarts.com/dev/clusterThis/design/clusterThis_overall.pdf">http://www.digitalcinemaarts.com/dev/clusterThis/design/clusterThis_overall.pdf</ulink></para>
+<para><bold>render()</bold> method algorithm: <ulink url="http://www.digitalcinemaarts.com/dev/clusterThis/design/clusterThis_flowchart.pdf">http://www.digitalcinemaarts.com/dev/clusterThis/design/clusterThis_flowchart.pdf</ulink></para>
+<para><bold>postProcess()</bold> algorithm: <ulink url="http://www.digitalcinemaarts.com/dev/clusterThis/design/clusterThis_postProcess.pdf">http://www.digitalcinemaarts.com/dev/clusterThis/design/clusterThis_postProcess.pdf</ulink></para>
+</sect1>
+<sect1 id="overview_1secDebugTips">
+<title>Debug Tips</title>
+<para>1) To make sure the clusterThis DSO/DLL is available to mantra, from a UNIX (or CygWIN on Windows) shell, execute the following command:</para>
+<para><preformatted>
+earth:~&gt; mantra -V4
+Registering procedural &apos;clusterThis&apos;
+Registering procedural &apos;sprite&apos;
+Registering procedural &apos;image3d&apos;
+Registering procedural &apos;metapoly&apos;
+Registering procedural &apos;file&apos;
+Registering procedural &apos;fur&apos;
+Registering procedural &apos;program&apos;
+Registering procedural &apos;hscriptinstance&apos;
+Registering procedural &apos;image3dvolume&apos;
+mantra Version 9.5.169 (Compiled on 07/17/08)
+</preformatted></para>
+<para>The verbosity level of 4 or greater for mantra will report which mantra procedural DSO&apos;s are available. If clusterThis is not in this list, the DSO is not in the right location, or the VRAYprocedural file isn&apos;t correct. </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

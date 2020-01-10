@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="example__scenes_8txt" kind="file" language="C++">
+    <compoundname>example_scenes.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">@page<sp/>exampleScenes<sp/>clusterThis<sp/>Cookbook</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">@section<sp/>Contents</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">-<sp/>@ref<sp/>sPointInstancing</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">-<sp/>@ref<sp/>sPrimitiveInstancing</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">-<sp/>@ref<sp/>sFileInstancing</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">@section<sp/>sPointInstancing<sp/>Point<sp/>Instancing</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">&lt;A<sp/>TARGET=_blank<sp/>HREF=&quot;https://vimeo.com/55141948&quot;&gt;Simple<sp/>Point<sp/>Instancing<sp/>w/Open<sp/>VDB&lt;/A&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">@section<sp/>sPrimitiveInstancing<sp/>Primitive<sp/>Instancing</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">@section<sp/>sFileInstancing<sp/><sp/>File<sp/>Instancing</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="example_scenes.txt"/>
+  </compounddef>
+</doxygen>

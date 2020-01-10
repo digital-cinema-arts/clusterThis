@@ -1,0 +1,1589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Doxyfile" kind="file" language="C++">
+    <compoundname>Doxyfile</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Doxyfile<sp/>1.6.3</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>file<sp/>describes<sp/>the<sp/>settings<sp/>to<sp/>be<sp/>used<sp/>by<sp/>the<sp/>documentation<sp/>system</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>(www.doxygen.org)<sp/>for<sp/>a<sp/>project</highlight></codeline>
+<codeline><highlight class="normal">#</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>All<sp/>text<sp/>after<sp/>a<sp/>hash<sp/>(#)<sp/>is<sp/>considered<sp/>a<sp/>comment<sp/>and<sp/>will<sp/>be<sp/>ignored</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>format<sp/>is:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>TAG<sp/>=<sp/>value<sp/>[value,<sp/>...]</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>For<sp/>lists<sp/>items<sp/>can<sp/>also<sp/>be<sp/>appended<sp/>using:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/>TAG<sp/>+=<sp/>value<sp/>[value,<sp/>...]</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Values<sp/>that<sp/>contain<sp/>spaces<sp/>should<sp/>be<sp/>placed<sp/>between<sp/>quotes<sp/>(&quot;<sp/>&quot;)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Project<sp/>related<sp/>configuration<sp/>options</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>specifies<sp/>the<sp/>encoding<sp/>used<sp/>for<sp/>all<sp/>characters<sp/>in<sp/>the<sp/>config<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>follow.<sp/>The<sp/>default<sp/>is<sp/>UTF-8<sp/>which<sp/>is<sp/>also<sp/>the<sp/>encoding<sp/>used<sp/>for<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>text<sp/>before<sp/>the<sp/>first<sp/>occurrence<sp/>of<sp/>this<sp/>tag.<sp/>Doxygen<sp/>uses<sp/>libiconv<sp/>(or<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>iconv<sp/>built<sp/>into<sp/>libc)<sp/>for<sp/>the<sp/>transcoding.<sp/>See</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>http://www.gnu.org/software/libiconv<sp/>for<sp/>the<sp/>list<sp/>of<sp/>possible<sp/>encodings.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOXYFILE_ENCODING<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>UTF-8</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>PROJECT_NAME<sp/>tag<sp/>is<sp/>a<sp/>single<sp/>word<sp/>(or<sp/>a<sp/>sequence<sp/>of<sp/>words<sp/>surrounded</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>by<sp/>quotes)<sp/>that<sp/>should<sp/>identify<sp/>the<sp/>project.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PROJECT_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>clusterThis</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>PROJECT_NUMBER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enter<sp/>a<sp/>project<sp/>or<sp/>revision<sp/>number.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>could<sp/>be<sp/>handy<sp/>for<sp/>archiving<sp/>the<sp/>generated<sp/>documentation<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>if<sp/>some<sp/>version<sp/>control<sp/>system<sp/>is<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PROJECT_NUMBER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2.5.365</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>OUTPUT_DIRECTORY<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>(relative<sp/>or<sp/>absolute)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>base<sp/>path<sp/>where<sp/>the<sp/>generated<sp/>documentation<sp/>will<sp/>be<sp/>put.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is<sp/>entered,<sp/>it<sp/>will<sp/>be<sp/>relative<sp/>to<sp/>the<sp/>location</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>where<sp/>doxygen<sp/>was<sp/>started.<sp/>If<sp/>left<sp/>blank<sp/>the<sp/>current<sp/>directory<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OUTPUT_DIRECTORY<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CREATE_SUBDIRS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>then<sp/>doxygen<sp/>will<sp/>create</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>4096<sp/>sub-directories<sp/>(in<sp/>2<sp/>levels)<sp/>under<sp/>the<sp/>output<sp/>directory<sp/>of<sp/>each<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>format<sp/>and<sp/>will<sp/>distribute<sp/>the<sp/>generated<sp/>files<sp/>over<sp/>these<sp/>directories.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Enabling<sp/>this<sp/>option<sp/>can<sp/>be<sp/>useful<sp/>when<sp/>feeding<sp/>doxygen<sp/>a<sp/>huge<sp/>amount<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>source<sp/>files,<sp/>where<sp/>putting<sp/>all<sp/>generated<sp/>files<sp/>in<sp/>the<sp/>same<sp/>directory<sp/>would</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>otherwise<sp/>cause<sp/>performance<sp/>problems<sp/>for<sp/>the<sp/>file<sp/>system.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CREATE_SUBDIRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>OUTPUT_LANGUAGE<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>language<sp/>in<sp/>which<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>generated<sp/>by<sp/>doxygen<sp/>is<sp/>written.<sp/>Doxygen<sp/>will<sp/>use<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>information<sp/>to<sp/>generate<sp/>all<sp/>constant<sp/>output<sp/>in<sp/>the<sp/>proper<sp/>language.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>language<sp/>is<sp/>English,<sp/>other<sp/>supported<sp/>languages<sp/>are:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Afrikaans,<sp/>Arabic,<sp/>Brazilian,<sp/>Catalan,<sp/>Chinese,<sp/>Chinese-Traditional,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Croatian,<sp/>Czech,<sp/>Danish,<sp/>Dutch,<sp/>Esperanto,<sp/>Farsi,<sp/>Finnish,<sp/>French,<sp/>German,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Greek,<sp/>Hungarian,<sp/>Italian,<sp/>Japanese,<sp/>Japanese-en<sp/>(Japanese<sp/>with<sp/>English</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>messages),<sp/>Korean,<sp/>Korean-en,<sp/>Lithuanian,<sp/>Norwegian,<sp/>Macedonian,<sp/>Persian,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Polish,<sp/>Portuguese,<sp/>Romanian,<sp/>Russian,<sp/>Serbian,<sp/>Serbian-Cyrilic,<sp/>Slovak,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Slovene,<sp/>Spanish,<sp/>Swedish,<sp/>Ukrainian,<sp/>and<sp/>Vietnamese.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OUTPUT_LANGUAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>English</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>BRIEF_MEMBER_DESC<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>include<sp/>brief<sp/>member<sp/>descriptions<sp/>after<sp/>the<sp/>members<sp/>that<sp/>are<sp/>listed<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>file<sp/>and<sp/>class<sp/>documentation<sp/>(similar<sp/>to<sp/>JavaDoc).</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>to<sp/>NO<sp/>to<sp/>disable<sp/>this.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">BRIEF_MEMBER_DESC<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>REPEAT_BRIEF<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will<sp/>prepend</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>brief<sp/>description<sp/>of<sp/>a<sp/>member<sp/>or<sp/>function<sp/>before<sp/>the<sp/>detailed<sp/>description.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note:<sp/>if<sp/>both<sp/>HIDE_UNDOC_MEMBERS<sp/>and<sp/>BRIEF_MEMBER_DESC<sp/>are<sp/>set<sp/>to<sp/>NO,<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>brief<sp/>descriptions<sp/>will<sp/>be<sp/>completely<sp/>suppressed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REPEAT_BRIEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>implements<sp/>a<sp/>quasi-intelligent<sp/>brief<sp/>description<sp/>abbreviator</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>is<sp/>used<sp/>to<sp/>form<sp/>the<sp/>text<sp/>in<sp/>various<sp/>listings.<sp/>Each<sp/>string</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>this<sp/>list,<sp/>if<sp/>found<sp/>as<sp/>the<sp/>leading<sp/>text<sp/>of<sp/>the<sp/>brief<sp/>description,<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>stripped<sp/>from<sp/>the<sp/>text<sp/>and<sp/>the<sp/>result<sp/>after<sp/>processing<sp/>the<sp/>whole<sp/>list,<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>used<sp/>as<sp/>the<sp/>annotated<sp/>text.<sp/>Otherwise,<sp/>the<sp/>brief<sp/>description<sp/>is<sp/>used<sp/>as-is.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>left<sp/>blank,<sp/>the<sp/>following<sp/>values<sp/>are<sp/>used<sp/>(&quot;$name&quot;<sp/>is<sp/>automatically</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>replaced<sp/>with<sp/>the<sp/>name<sp/>of<sp/>the<sp/>entity):<sp/>&quot;The<sp/>$name<sp/>class&quot;<sp/>&quot;The<sp/>$name<sp/>widget&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>&quot;The<sp/>$name<sp/>file&quot;<sp/>&quot;is&quot;<sp/>&quot;provides&quot;<sp/>&quot;specifies&quot;<sp/>&quot;contains&quot;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>&quot;represents&quot;<sp/>&quot;a&quot;<sp/>&quot;an&quot;<sp/>&quot;the&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ABBREVIATE_BRIEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ALWAYS_DETAILED_SEC<sp/>and<sp/>REPEAT_BRIEF<sp/>tags<sp/>are<sp/>both<sp/>set<sp/>to<sp/>YES<sp/>then</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Doxygen<sp/>will<sp/>generate<sp/>a<sp/>detailed<sp/>section<sp/>even<sp/>if<sp/>there<sp/>is<sp/>only<sp/>a<sp/>brief</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>description.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ALWAYS_DETAILED_SEC<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>INLINE_INHERITED_MEMB<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>show<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>inherited<sp/>members<sp/>of<sp/>a<sp/>class<sp/>in<sp/>the<sp/>documentation<sp/>of<sp/>that<sp/>class<sp/>as<sp/>if<sp/>those</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>members<sp/>were<sp/>ordinary<sp/>class<sp/>members.<sp/>Constructors,<sp/>destructors<sp/>and<sp/>assignment</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>operators<sp/>of<sp/>the<sp/>base<sp/>classes<sp/>will<sp/>not<sp/>be<sp/>shown.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INLINE_INHERITED_MEMB<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>FULL_PATH_NAMES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>Doxygen<sp/>will<sp/>prepend<sp/>the<sp/>full</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>path<sp/>before<sp/>files<sp/>name<sp/>in<sp/>the<sp/>file<sp/>list<sp/>and<sp/>in<sp/>the<sp/>header<sp/>files.<sp/>If<sp/>set</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>NO<sp/>the<sp/>shortest<sp/>path<sp/>that<sp/>makes<sp/>the<sp/>file<sp/>name<sp/>unique<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FULL_PATH_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>FULL_PATH_NAMES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>the<sp/>STRIP_FROM_PATH<sp/>tag</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>can<sp/>be<sp/>used<sp/>to<sp/>strip<sp/>a<sp/>user-defined<sp/>part<sp/>of<sp/>the<sp/>path.<sp/>Stripping<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>only<sp/>done<sp/>if<sp/>one<sp/>of<sp/>the<sp/>specified<sp/>strings<sp/>matches<sp/>the<sp/>left-hand<sp/>part<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>path.<sp/>The<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>show<sp/>relative<sp/>paths<sp/>in<sp/>the<sp/>file<sp/>list.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>left<sp/>blank<sp/>the<sp/>directory<sp/>from<sp/>which<sp/>doxygen<sp/>is<sp/>run<sp/>is<sp/>used<sp/>as<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>path<sp/>to<sp/>strip.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">STRIP_FROM_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>STRIP_FROM_INC_PATH<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>strip<sp/>a<sp/>user-defined<sp/>part<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>path<sp/>mentioned<sp/>in<sp/>the<sp/>documentation<sp/>of<sp/>a<sp/>class,<sp/>which<sp/>tells</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>reader<sp/>which<sp/>header<sp/>file<sp/>to<sp/>include<sp/>in<sp/>order<sp/>to<sp/>use<sp/>a<sp/>class.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>left<sp/>blank<sp/>only<sp/>the<sp/>name<sp/>of<sp/>the<sp/>header<sp/>file<sp/>containing<sp/>the<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>definition<sp/>is<sp/>used.<sp/>Otherwise<sp/>one<sp/>should<sp/>specify<sp/>the<sp/>include<sp/>paths<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>are<sp/>normally<sp/>passed<sp/>to<sp/>the<sp/>compiler<sp/>using<sp/>the<sp/>-I<sp/>flag.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">STRIP_FROM_INC_PATH<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SHORT_NAMES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>much<sp/>shorter</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>(but<sp/>less<sp/>readable)<sp/>file<sp/>names.<sp/>This<sp/>can<sp/>be<sp/>useful<sp/>is<sp/>your<sp/>file<sp/>systems</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doesn&apos;t<sp/>support<sp/>long<sp/>names<sp/>like<sp/>on<sp/>DOS,<sp/>Mac,<sp/>or<sp/>CD-ROM.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SHORT_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>JAVADOC_AUTOBRIEF<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>interpret<sp/>the<sp/>first<sp/>line<sp/>(until<sp/>the<sp/>first<sp/>dot)<sp/>of<sp/>a<sp/>JavaDoc-style</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>comment<sp/>as<sp/>the<sp/>brief<sp/>description.<sp/>If<sp/>set<sp/>to<sp/>NO,<sp/>the<sp/>JavaDoc</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>comments<sp/>will<sp/>behave<sp/>just<sp/>like<sp/>regular<sp/>Qt-style<sp/>comments</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>(thus<sp/>requiring<sp/>an<sp/>explicit<sp/>@brief<sp/>command<sp/>for<sp/>a<sp/>brief<sp/>description.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">JAVADOC_AUTOBRIEF<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>QT_AUTOBRIEF<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>interpret<sp/>the<sp/>first<sp/>line<sp/>(until<sp/>the<sp/>first<sp/>dot)<sp/>of<sp/>a<sp/>Qt-style</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>comment<sp/>as<sp/>the<sp/>brief<sp/>description.<sp/>If<sp/>set<sp/>to<sp/>NO,<sp/>the<sp/>comments</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>behave<sp/>just<sp/>like<sp/>regular<sp/>Qt-style<sp/>comments<sp/>(thus<sp/>requiring</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>an<sp/>explicit<sp/>\brief<sp/>command<sp/>for<sp/>a<sp/>brief<sp/>description.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QT_AUTOBRIEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>MULTILINE_CPP_IS_BRIEF<sp/>tag<sp/>can<sp/>be<sp/>set<sp/>to<sp/>YES<sp/>to<sp/>make<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>treat<sp/>a<sp/>multi-line<sp/>C++<sp/>special<sp/>comment<sp/>block<sp/>(i.e.<sp/>a<sp/>block<sp/>of<sp/>//!<sp/>or<sp/>///</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>comments)<sp/>as<sp/>a<sp/>brief<sp/>description.<sp/>This<sp/>used<sp/>to<sp/>be<sp/>the<sp/>default<sp/>behaviour.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>new<sp/>default<sp/>is<sp/>to<sp/>treat<sp/>a<sp/>multi-line<sp/>C++<sp/>comment<sp/>block<sp/>as<sp/>a<sp/>detailed</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>description.<sp/>Set<sp/>this<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>you<sp/>prefer<sp/>the<sp/>old<sp/>behaviour<sp/>instead.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MULTILINE_CPP_IS_BRIEF<sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>INHERIT_DOCS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>then<sp/>an<sp/>undocumented</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>member<sp/>inherits<sp/>the<sp/>documentation<sp/>from<sp/>any<sp/>documented<sp/>member<sp/>that<sp/>it</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>re-implements.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INHERIT_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SEPARATE_MEMBER_PAGES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>then<sp/>doxygen<sp/>will<sp/>produce</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>a<sp/>new<sp/>page<sp/>for<sp/>each<sp/>member.<sp/>If<sp/>set<sp/>to<sp/>NO,<sp/>the<sp/>documentation<sp/>of<sp/>a<sp/>member<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>part<sp/>of<sp/>the<sp/>file/class/namespace<sp/>that<sp/>contains<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SEPARATE_MEMBER_PAGES<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>TAB_SIZE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>set<sp/>the<sp/>number<sp/>of<sp/>spaces<sp/>in<sp/>a<sp/>tab.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Doxygen<sp/>uses<sp/>this<sp/>value<sp/>to<sp/>replace<sp/>tabs<sp/>by<sp/>spaces<sp/>in<sp/>code<sp/>fragments.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TAB_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>number<sp/>of<sp/>aliases<sp/>that<sp/>acts</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>as<sp/>commands<sp/>in<sp/>the<sp/>documentation.<sp/>An<sp/>alias<sp/>has<sp/>the<sp/>form<sp/>&quot;name=value&quot;.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>For<sp/>example<sp/>adding<sp/>&quot;sideeffect=\par<sp/>Side<sp/>Effects:\n&quot;<sp/>will<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>put<sp/>the<sp/>command<sp/>\sideeffect<sp/>(or<sp/>@sideeffect)<sp/>in<sp/>the<sp/>documentation,<sp/>which</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>result<sp/>in<sp/>a<sp/>user-defined<sp/>paragraph<sp/>with<sp/>heading<sp/>&quot;Side<sp/>Effects:&quot;.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>You<sp/>can<sp/>put<sp/>\n&apos;s<sp/>in<sp/>the<sp/>value<sp/>part<sp/>of<sp/>an<sp/>alias<sp/>to<sp/>insert<sp/>newlines.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ALIASES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>OPTIMIZE_OUTPUT_FOR_C<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>your<sp/>project<sp/>consists<sp/>of<sp/>C</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>sources<sp/>only.<sp/>Doxygen<sp/>will<sp/>then<sp/>generate<sp/>output<sp/>that<sp/>is<sp/>more<sp/>tailored<sp/>for<sp/>C.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>For<sp/>instance,<sp/>some<sp/>of<sp/>the<sp/>names<sp/>that<sp/>are<sp/>used<sp/>will<sp/>be<sp/>different.<sp/>The<sp/>list</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>of<sp/>all<sp/>members<sp/>will<sp/>be<sp/>omitted,<sp/>etc.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OPTIMIZE_OUTPUT_FOR_C<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>OPTIMIZE_OUTPUT_JAVA<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>your<sp/>project<sp/>consists<sp/>of<sp/>Java</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>sources<sp/>only.<sp/>Doxygen<sp/>will<sp/>then<sp/>generate<sp/>output<sp/>that<sp/>is<sp/>more<sp/>tailored<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Java.<sp/>For<sp/>instance,<sp/>namespaces<sp/>will<sp/>be<sp/>presented<sp/>as<sp/>packages,<sp/>qualified</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>scopes<sp/>will<sp/>look<sp/>different,<sp/>etc.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OPTIMIZE_OUTPUT_JAVA<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>OPTIMIZE_FOR_FORTRAN<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>your<sp/>project<sp/>consists<sp/>of<sp/>Fortran</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>sources<sp/>only.<sp/>Doxygen<sp/>will<sp/>then<sp/>generate<sp/>output<sp/>that<sp/>is<sp/>more<sp/>tailored<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Fortran.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OPTIMIZE_FOR_FORTRAN<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>OPTIMIZE_OUTPUT_VHDL<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>your<sp/>project<sp/>consists<sp/>of<sp/>VHDL</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>sources.<sp/>Doxygen<sp/>will<sp/>then<sp/>generate<sp/>output<sp/>that<sp/>is<sp/>tailored<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>VHDL.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OPTIMIZE_OUTPUT_VHDL<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Doxygen<sp/>selects<sp/>the<sp/>parser<sp/>to<sp/>use<sp/>depending<sp/>on<sp/>the<sp/>extension<sp/>of<sp/>the<sp/>files<sp/>it<sp/>parses.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>With<sp/>this<sp/>tag<sp/>you<sp/>can<sp/>assign<sp/>which<sp/>parser<sp/>to<sp/>use<sp/>for<sp/>a<sp/>given<sp/>extension.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Doxygen<sp/>has<sp/>a<sp/>built-in<sp/>mapping,<sp/>but<sp/>you<sp/>can<sp/>override<sp/>or<sp/>extend<sp/>it<sp/>using<sp/>this<sp/>tag.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>format<sp/>is<sp/>ext=language,<sp/>where<sp/>ext<sp/>is<sp/>a<sp/>file<sp/>extension,<sp/>and<sp/>language<sp/>is<sp/>one<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>parsers<sp/>supported<sp/>by<sp/>doxygen:<sp/>IDL,<sp/>Java,<sp/>Javascript,<sp/>C#,<sp/>C,<sp/>C++,<sp/>D,<sp/>PHP,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Objective-C,<sp/>Python,<sp/>Fortran,<sp/>VHDL,<sp/>C,<sp/>C++.<sp/>For<sp/>instance<sp/>to<sp/>make<sp/>doxygen<sp/>treat</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>.inc<sp/>files<sp/>as<sp/>Fortran<sp/>files<sp/>(default<sp/>is<sp/>PHP),<sp/>and<sp/>.f<sp/>files<sp/>as<sp/>C<sp/>(default<sp/>is<sp/>Fortran),</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>use:<sp/>inc=Fortran<sp/>f=C.<sp/>Note<sp/>that<sp/>for<sp/>custom<sp/>extensions<sp/>you<sp/>also<sp/>need<sp/>to<sp/>set</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>FILE_PATTERNS<sp/>otherwise<sp/>the<sp/>files<sp/>are<sp/>not<sp/>read<sp/>by<sp/>doxygen.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTENSION_MAPPING<sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>you<sp/>use<sp/>STL<sp/>classes<sp/>(i.e.<sp/>std::string,<sp/>std::vector,<sp/>etc.)<sp/>but<sp/>do<sp/>not<sp/>want</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>include<sp/>(a<sp/>tag<sp/>file<sp/>for)<sp/>the<sp/>STL<sp/>sources<sp/>as<sp/>input,<sp/>then<sp/>you<sp/>should</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>set<sp/>this<sp/>tag<sp/>to<sp/>YES<sp/>in<sp/>order<sp/>to<sp/>let<sp/>doxygen<sp/>match<sp/>functions<sp/>declarations<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>definitions<sp/>whose<sp/>arguments<sp/>contain<sp/>STL<sp/>classes<sp/>(e.g.<sp/>func(std::string);<sp/>v.s.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>func(std::string)<sp/>{}).<sp/>This<sp/>also<sp/>make<sp/>the<sp/>inheritance<sp/>and<sp/>collaboration</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>diagrams<sp/>that<sp/>involve<sp/>STL<sp/>classes<sp/>more<sp/>complete<sp/>and<sp/>accurate.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">BUILTIN_STL_SUPPORT<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>you<sp/>use<sp/>Microsoft&apos;s<sp/>C++/CLI<sp/>language,<sp/>you<sp/>should<sp/>set<sp/>this<sp/>option<sp/>to<sp/>YES<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>enable<sp/>parsing<sp/>support.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CPP_CLI_SUPPORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>SIP_SUPPORT<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>your<sp/>project<sp/>consists<sp/>of<sp/>sip<sp/>sources<sp/>only.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Doxygen<sp/>will<sp/>parse<sp/>them<sp/>like<sp/>normal<sp/>C++<sp/>but<sp/>will<sp/>assume<sp/>all<sp/>classes<sp/>use<sp/>public</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>instead<sp/>of<sp/>private<sp/>inheritance<sp/>when<sp/>no<sp/>explicit<sp/>protection<sp/>keyword<sp/>is<sp/>present.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SIP_SUPPORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>For<sp/>Microsoft&apos;s<sp/>IDL<sp/>there<sp/>are<sp/>propget<sp/>and<sp/>propput<sp/>attributes<sp/>to<sp/>indicate<sp/>getter</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>setter<sp/>methods<sp/>for<sp/>a<sp/>property.<sp/>Setting<sp/>this<sp/>option<sp/>to<sp/>YES<sp/>(the<sp/>default)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>make<sp/>doxygen<sp/>to<sp/>replace<sp/>the<sp/>get<sp/>and<sp/>set<sp/>methods<sp/>by<sp/>a<sp/>property<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation.<sp/>This<sp/>will<sp/>only<sp/>work<sp/>if<sp/>the<sp/>methods<sp/>are<sp/>indeed<sp/>getting<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>setting<sp/>a<sp/>simple<sp/>type.<sp/>If<sp/>this<sp/>is<sp/>not<sp/>the<sp/>case,<sp/>or<sp/>you<sp/>want<sp/>to<sp/>show<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>methods<sp/>anyway,<sp/>you<sp/>should<sp/>set<sp/>this<sp/>option<sp/>to<sp/>NO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">IDL_PROPERTY_SUPPORT<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>member<sp/>grouping<sp/>is<sp/>used<sp/>in<sp/>the<sp/>documentation<sp/>and<sp/>the<sp/>DISTRIBUTE_GROUP_DOC</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>then<sp/>doxygen<sp/>will<sp/>reuse<sp/>the<sp/>documentation<sp/>of<sp/>the<sp/>first</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>member<sp/>in<sp/>the<sp/>group<sp/>(if<sp/>any)<sp/>for<sp/>the<sp/>other<sp/>members<sp/>of<sp/>the<sp/>group.<sp/>By<sp/>default</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>all<sp/>members<sp/>of<sp/>a<sp/>group<sp/>must<sp/>be<sp/>documented<sp/>explicitly.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DISTRIBUTE_GROUP_DOC<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>SUBGROUPING<sp/>tag<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>to<sp/>allow<sp/>class<sp/>member<sp/>groups<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>same<sp/>type<sp/>(for<sp/>instance<sp/>a<sp/>group<sp/>of<sp/>public<sp/>functions)<sp/>to<sp/>be<sp/>put<sp/>as<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>subgroup<sp/>of<sp/>that<sp/>type<sp/>(e.g.<sp/>under<sp/>the<sp/>Public<sp/>Functions<sp/>section).<sp/>Set<sp/>it<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>NO<sp/>to<sp/>prevent<sp/>subgrouping.<sp/>Alternatively,<sp/>this<sp/>can<sp/>be<sp/>done<sp/>per<sp/>class<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>\nosubgrouping<sp/>command.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SUBGROUPING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>TYPEDEF_HIDES_STRUCT<sp/>is<sp/>enabled,<sp/>a<sp/>typedef<sp/>of<sp/>a<sp/>struct,<sp/>union,<sp/>or<sp/>enum</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>documented<sp/>as<sp/>struct,<sp/>union,<sp/>or<sp/>enum<sp/>with<sp/>the<sp/>name<sp/>of<sp/>the<sp/>typedef.<sp/>So</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>typedef<sp/>struct<sp/>TypeS<sp/>{}<sp/>TypeT,<sp/>will<sp/>appear<sp/>in<sp/>the<sp/>documentation<sp/>as<sp/>a<sp/>struct</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>with<sp/>name<sp/>TypeT.<sp/>When<sp/>disabled<sp/>the<sp/>typedef<sp/>will<sp/>appear<sp/>as<sp/>a<sp/>member<sp/>of<sp/>a<sp/>file,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>namespace,<sp/>or<sp/>class.<sp/>And<sp/>the<sp/>struct<sp/>will<sp/>be<sp/>named<sp/>TypeS.<sp/>This<sp/>can<sp/>typically</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>useful<sp/>for<sp/>C<sp/>code<sp/>in<sp/>case<sp/>the<sp/>coding<sp/>convention<sp/>dictates<sp/>that<sp/>all<sp/>compound</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>types<sp/>are<sp/>typedef&apos;ed<sp/>and<sp/>only<sp/>the<sp/>typedef<sp/>is<sp/>referenced,<sp/>never<sp/>the<sp/>tag<sp/>name.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TYPEDEF_HIDES_STRUCT<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>SYMBOL_CACHE_SIZE<sp/>determines<sp/>the<sp/>size<sp/>of<sp/>the<sp/>internal<sp/>cache<sp/>use<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>determine<sp/>which<sp/>symbols<sp/>to<sp/>keep<sp/>in<sp/>memory<sp/>and<sp/>which<sp/>to<sp/>flush<sp/>to<sp/>disk.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>the<sp/>cache<sp/>is<sp/>full,<sp/>less<sp/>often<sp/>used<sp/>symbols<sp/>will<sp/>be<sp/>written<sp/>to<sp/>disk.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>For<sp/>small<sp/>to<sp/>medium<sp/>size<sp/>projects<sp/>(&lt;1000<sp/>input<sp/>files)<sp/>the<sp/>default<sp/>value<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>probably<sp/>good<sp/>enough.<sp/>For<sp/>larger<sp/>projects<sp/>a<sp/>too<sp/>small<sp/>cache<sp/>size<sp/>can<sp/>cause</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>to<sp/>be<sp/>busy<sp/>swapping<sp/>symbols<sp/>to<sp/>and<sp/>from<sp/>disk<sp/>most<sp/>of<sp/>the<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>causing<sp/>a<sp/>significant<sp/>performance<sp/>penality.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>system<sp/>has<sp/>enough<sp/>physical<sp/>memory<sp/>increasing<sp/>the<sp/>cache<sp/>will<sp/>improve<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>performance<sp/>by<sp/>keeping<sp/>more<sp/>symbols<sp/>in<sp/>memory.<sp/>Note<sp/>that<sp/>the<sp/>value<sp/>works<sp/>on</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>a<sp/>logarithmic<sp/>scale<sp/>so<sp/>increasing<sp/>the<sp/>size<sp/>by<sp/>one<sp/>will<sp/>rougly<sp/>double<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>memory<sp/>usage.<sp/>The<sp/>cache<sp/>size<sp/>is<sp/>given<sp/>by<sp/>this<sp/>formula:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>2^(16+SYMBOL_CACHE_SIZE).<sp/>The<sp/>valid<sp/>range<sp/>is<sp/>0..9,<sp/>the<sp/>default<sp/>is<sp/>0,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>corresponding<sp/>to<sp/>a<sp/>cache<sp/>size<sp/>of<sp/>2^16<sp/>=<sp/>65536<sp/>symbols</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SYMBOL_CACHE_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Build<sp/>related<sp/>configuration<sp/>options</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>EXTRACT_ALL<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>doxygen<sp/>will<sp/>assume<sp/>all<sp/>entities<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>are<sp/>documented,<sp/>even<sp/>if<sp/>no<sp/>documentation<sp/>was<sp/>available.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Private<sp/>class<sp/>members<sp/>and<sp/>static<sp/>file<sp/>members<sp/>will<sp/>be<sp/>hidden<sp/>unless</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>EXTRACT_PRIVATE<sp/>and<sp/>EXTRACT_STATIC<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTRACT_ALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>EXTRACT_PRIVATE<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>all<sp/>private<sp/>members<sp/>of<sp/>a<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>be<sp/>included<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTRACT_PRIVATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>EXTRACT_STATIC<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>all<sp/>static<sp/>members<sp/>of<sp/>a<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>be<sp/>included<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTRACT_STATIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>EXTRACT_LOCAL_CLASSES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>classes<sp/>(and<sp/>structs)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>defined<sp/>locally<sp/>in<sp/>source<sp/>files<sp/>will<sp/>be<sp/>included<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>only<sp/>classes<sp/>defined<sp/>in<sp/>header<sp/>files<sp/>are<sp/>included.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTRACT_LOCAL_CLASSES<sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>flag<sp/>is<sp/>only<sp/>useful<sp/>for<sp/>Objective-C<sp/>code.<sp/>When<sp/>set<sp/>to<sp/>YES<sp/>local</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>methods,<sp/>which<sp/>are<sp/>defined<sp/>in<sp/>the<sp/>implementation<sp/>section<sp/>but<sp/>not<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>interface<sp/>are<sp/>included<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>only<sp/>methods<sp/>in<sp/>the<sp/>interface<sp/>are<sp/>included.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTRACT_LOCAL_METHODS<sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>this<sp/>flag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>members<sp/>of<sp/>anonymous<sp/>namespaces<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>extracted<sp/>and<sp/>appear<sp/>in<sp/>the<sp/>documentation<sp/>as<sp/>a<sp/>namespace<sp/>called</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>&apos;anonymous_namespace{file}&apos;,<sp/>where<sp/>file<sp/>will<sp/>be<sp/>replaced<sp/>with<sp/>the<sp/>base</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>name<sp/>of<sp/>the<sp/>file<sp/>that<sp/>contains<sp/>the<sp/>anonymous<sp/>namespace.<sp/>By<sp/>default</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>anonymous<sp/>namespace<sp/>are<sp/>hidden.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTRACT_ANON_NSPACES<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HIDE_UNDOC_MEMBERS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>Doxygen<sp/>will<sp/>hide<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>undocumented<sp/>members<sp/>of<sp/>documented<sp/>classes,<sp/>files<sp/>or<sp/>namespaces.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>these<sp/>members<sp/>will<sp/>be<sp/>included<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>various<sp/>overviews,<sp/>but<sp/>no<sp/>documentation<sp/>section<sp/>is<sp/>generated.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>option<sp/>has<sp/>no<sp/>effect<sp/>if<sp/>EXTRACT_ALL<sp/>is<sp/>enabled.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HIDE_UNDOC_MEMBERS<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HIDE_UNDOC_CLASSES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>Doxygen<sp/>will<sp/>hide<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>undocumented<sp/>classes<sp/>that<sp/>are<sp/>normally<sp/>visible<sp/>in<sp/>the<sp/>class<sp/>hierarchy.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>these<sp/>classes<sp/>will<sp/>be<sp/>included<sp/>in<sp/>the<sp/>various</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>overviews.<sp/>This<sp/>option<sp/>has<sp/>no<sp/>effect<sp/>if<sp/>EXTRACT_ALL<sp/>is<sp/>enabled.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HIDE_UNDOC_CLASSES<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HIDE_FRIEND_COMPOUNDS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>Doxygen<sp/>will<sp/>hide<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>friend<sp/>(class|struct|union)<sp/>declarations.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>these<sp/>declarations<sp/>will<sp/>be<sp/>included<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HIDE_FRIEND_COMPOUNDS<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HIDE_IN_BODY_DOCS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>Doxygen<sp/>will<sp/>hide<sp/>any</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>blocks<sp/>found<sp/>inside<sp/>the<sp/>body<sp/>of<sp/>a<sp/>function.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>these<sp/>blocks<sp/>will<sp/>be<sp/>appended<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>function&apos;s<sp/>detailed<sp/>documentation<sp/>block.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HIDE_IN_BODY_DOCS<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>INTERNAL_DOCS<sp/>tag<sp/>determines<sp/>if<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>is<sp/>typed<sp/>after<sp/>a<sp/>\internal<sp/>command<sp/>is<sp/>included.<sp/>If<sp/>the<sp/>tag<sp/>is<sp/>set</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>then<sp/>the<sp/>documentation<sp/>will<sp/>be<sp/>excluded.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>it<sp/>to<sp/>YES<sp/>to<sp/>include<sp/>the<sp/>internal<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INTERNAL_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CASE_SENSE_NAMES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>NO<sp/>then<sp/>Doxygen<sp/>will<sp/>only<sp/>generate</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>file<sp/>names<sp/>in<sp/>lower-case<sp/>letters.<sp/>If<sp/>set<sp/>to<sp/>YES<sp/>upper-case<sp/>letters<sp/>are<sp/>also</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>allowed.<sp/>This<sp/>is<sp/>useful<sp/>if<sp/>you<sp/>have<sp/>classes<sp/>or<sp/>files<sp/>whose<sp/>names<sp/>only<sp/>differ</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>case<sp/>and<sp/>if<sp/>your<sp/>file<sp/>system<sp/>supports<sp/>case<sp/>sensitive<sp/>file<sp/>names.<sp/>Windows</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>Mac<sp/>users<sp/>are<sp/>advised<sp/>to<sp/>set<sp/>this<sp/>option<sp/>to<sp/>NO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CASE_SENSE_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HIDE_SCOPE_NAMES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>then<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>show<sp/>members<sp/>with<sp/>their<sp/>full<sp/>class<sp/>and<sp/>namespace<sp/>scopes<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation.<sp/>If<sp/>set<sp/>to<sp/>YES<sp/>the<sp/>scope<sp/>will<sp/>be<sp/>hidden.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HIDE_SCOPE_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SHOW_INCLUDE_FILES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>then<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>put<sp/>a<sp/>list<sp/>of<sp/>the<sp/>files<sp/>that<sp/>are<sp/>included<sp/>by<sp/>a<sp/>file<sp/>in<sp/>the<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>of<sp/>that<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SHOW_INCLUDE_FILES<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>FORCE_LOCAL_INCLUDES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>list<sp/>include<sp/>files<sp/>with<sp/>double<sp/>quotes<sp/>in<sp/>the<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>rather<sp/>than<sp/>with<sp/>sharp<sp/>brackets.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FORCE_LOCAL_INCLUDES<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>INLINE_INFO<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>then<sp/>a<sp/>tag<sp/>[inline]</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>inserted<sp/>in<sp/>the<sp/>documentation<sp/>for<sp/>inline<sp/>members.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INLINE_INFO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SORT_MEMBER_DOCS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>then<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>sort<sp/>the<sp/>(detailed)<sp/>documentation<sp/>of<sp/>file<sp/>and<sp/>class<sp/>members</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>alphabetically<sp/>by<sp/>member<sp/>name.<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>the<sp/>members<sp/>will<sp/>appear<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>declaration<sp/>order.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SORT_MEMBER_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SORT_BRIEF_DOCS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>sort<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>brief<sp/>documentation<sp/>of<sp/>file,<sp/>namespace<sp/>and<sp/>class<sp/>members<sp/>alphabetically</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>by<sp/>member<sp/>name.<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>the<sp/>members<sp/>will<sp/>appear<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>declaration<sp/>order.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SORT_BRIEF_DOCS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SORT_MEMBERS_CTORS_1ST<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>sort<sp/>the<sp/>(brief<sp/>and<sp/>detailed)<sp/>documentation<sp/>of<sp/>class<sp/>members<sp/>so<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>constructors<sp/>and<sp/>destructors<sp/>are<sp/>listed<sp/>first.<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>constructors<sp/>will<sp/>appear<sp/>in<sp/>the<sp/>respective<sp/>orders<sp/>defined<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>SORT_MEMBER_DOCS<sp/>and<sp/>SORT_BRIEF_DOCS.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>will<sp/>be<sp/>ignored<sp/>for<sp/>brief<sp/>docs<sp/>if<sp/>SORT_BRIEF_DOCS<sp/>is<sp/>set<sp/>to<sp/>NO</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>ignored<sp/>for<sp/>detailed<sp/>docs<sp/>if<sp/>SORT_MEMBER_DOCS<sp/>is<sp/>set<sp/>to<sp/>NO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SORT_MEMBERS_CTORS_1ST<sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SORT_GROUP_NAMES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>sort<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>hierarchy<sp/>of<sp/>group<sp/>names<sp/>into<sp/>alphabetical<sp/>order.<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>group<sp/>names<sp/>will<sp/>appear<sp/>in<sp/>their<sp/>defined<sp/>order.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SORT_GROUP_NAMES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SORT_BY_SCOPE_NAME<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>class<sp/>list<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>sorted<sp/>by<sp/>fully-qualified<sp/>names,<sp/>including<sp/>namespaces.<sp/>If<sp/>set<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>NO<sp/>(the<sp/>default),<sp/>the<sp/>class<sp/>list<sp/>will<sp/>be<sp/>sorted<sp/>only<sp/>by<sp/>class<sp/>name,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>not<sp/>including<sp/>the<sp/>namespace<sp/>part.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note:<sp/>This<sp/>option<sp/>is<sp/>not<sp/>very<sp/>useful<sp/>if<sp/>HIDE_SCOPE_NAMES<sp/>is<sp/>set<sp/>to<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note:<sp/>This<sp/>option<sp/>applies<sp/>only<sp/>to<sp/>the<sp/>class<sp/>list,<sp/>not<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>alphabetical<sp/>list.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SORT_BY_SCOPE_NAME<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>GENERATE_TODOLIST<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enable<sp/>(YES)<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>disable<sp/>(NO)<sp/>the<sp/>todo<sp/>list.<sp/>This<sp/>list<sp/>is<sp/>created<sp/>by<sp/>putting<sp/>\todo</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>commands<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_TODOLIST<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>GENERATE_TESTLIST<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enable<sp/>(YES)<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>disable<sp/>(NO)<sp/>the<sp/>test<sp/>list.<sp/>This<sp/>list<sp/>is<sp/>created<sp/>by<sp/>putting<sp/>\test</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>commands<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_TESTLIST<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>GENERATE_BUGLIST<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enable<sp/>(YES)<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>disable<sp/>(NO)<sp/>the<sp/>bug<sp/>list.<sp/>This<sp/>list<sp/>is<sp/>created<sp/>by<sp/>putting<sp/>\bug</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>commands<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_BUGLIST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>GENERATE_DEPRECATEDLIST<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enable<sp/>(YES)<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>disable<sp/>(NO)<sp/>the<sp/>deprecated<sp/>list.<sp/>This<sp/>list<sp/>is<sp/>created<sp/>by<sp/>putting</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>\deprecated<sp/>commands<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_DEPRECATEDLIST=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>ENABLED_SECTIONS<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enable<sp/>conditional</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>sections,<sp/>marked<sp/>by<sp/>\if<sp/>sectionname<sp/>...<sp/>\endif.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ENABLED_SECTIONS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>MAX_INITIALIZER_LINES<sp/>tag<sp/>determines<sp/>the<sp/>maximum<sp/>number<sp/>of<sp/>lines</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>initial<sp/>value<sp/>of<sp/>a<sp/>variable<sp/>or<sp/>define<sp/>consists<sp/>of<sp/>for<sp/>it<sp/>to<sp/>appear<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>documentation.<sp/>If<sp/>the<sp/>initializer<sp/>consists<sp/>of<sp/>more<sp/>lines<sp/>than<sp/>specified</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>here<sp/>it<sp/>will<sp/>be<sp/>hidden.<sp/>Use<sp/>a<sp/>value<sp/>of<sp/>0<sp/>to<sp/>hide<sp/>initializers<sp/>completely.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>appearance<sp/>of<sp/>the<sp/>initializer<sp/>of<sp/>individual<sp/>variables<sp/>and<sp/>defines<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>can<sp/>be<sp/>controlled<sp/>using<sp/>\showinitializer<sp/>or<sp/>\hideinitializer</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>command<sp/>in<sp/>the<sp/>documentation<sp/>regardless<sp/>of<sp/>this<sp/>setting.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MAX_INITIALIZER_LINES<sp/><sp/>=<sp/>30</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>SHOW_USED_FILES<sp/>tag<sp/>to<sp/>NO<sp/>to<sp/>disable<sp/>the<sp/>list<sp/>of<sp/>files<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>at<sp/>the<sp/>bottom<sp/>of<sp/>the<sp/>documentation<sp/>of<sp/>classes<sp/>and<sp/>structs.<sp/>If<sp/>set<sp/>to<sp/>YES<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>list<sp/>will<sp/>mention<sp/>the<sp/>files<sp/>that<sp/>were<sp/>used<sp/>to<sp/>generate<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SHOW_USED_FILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>sources<sp/>in<sp/>your<sp/>project<sp/>are<sp/>distributed<sp/>over<sp/>multiple<sp/>directories</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>then<sp/>setting<sp/>the<sp/>SHOW_DIRECTORIES<sp/>tag<sp/>to<sp/>YES<sp/>will<sp/>show<sp/>the<sp/>directory<sp/>hierarchy</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>the<sp/>documentation.<sp/>The<sp/>default<sp/>is<sp/>NO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SHOW_DIRECTORIES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>SHOW_FILES<sp/>tag<sp/>to<sp/>NO<sp/>to<sp/>disable<sp/>the<sp/>generation<sp/>of<sp/>the<sp/>Files<sp/>page.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>will<sp/>remove<sp/>the<sp/>Files<sp/>entry<sp/>from<sp/>the<sp/>Quick<sp/>Index<sp/>and<sp/>from<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Folder<sp/>Tree<sp/>View<sp/>(if<sp/>specified).<sp/>The<sp/>default<sp/>is<sp/>YES.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SHOW_FILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>SHOW_NAMESPACES<sp/>tag<sp/>to<sp/>NO<sp/>to<sp/>disable<sp/>the<sp/>generation<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Namespaces<sp/>page.<sp/><sp/>This<sp/>will<sp/>remove<sp/>the<sp/>Namespaces<sp/>entry<sp/>from<sp/>the<sp/>Quick<sp/>Index</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>from<sp/>the<sp/>Folder<sp/>Tree<sp/>View<sp/>(if<sp/>specified).<sp/>The<sp/>default<sp/>is<sp/>YES.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SHOW_NAMESPACES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>FILE_VERSION_FILTER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>program<sp/>or<sp/>script<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>should<sp/>invoke<sp/>to<sp/>get<sp/>the<sp/>current<sp/>version<sp/>for<sp/>each<sp/>file<sp/>(typically<sp/>from</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>version<sp/>control<sp/>system).<sp/>Doxygen<sp/>will<sp/>invoke<sp/>the<sp/>program<sp/>by<sp/>executing<sp/>(via</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>popen())<sp/>the<sp/>command<sp/>&lt;command&gt;<sp/>&lt;input-file&gt;,<sp/>where<sp/>&lt;command&gt;<sp/>is<sp/>the<sp/>value<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>FILE_VERSION_FILTER<sp/>tag,<sp/>and<sp/>&lt;input-file&gt;<sp/>is<sp/>the<sp/>name<sp/>of<sp/>an<sp/>input<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>provided<sp/>by<sp/>doxygen.<sp/>Whatever<sp/>the<sp/>program<sp/>writes<sp/>to<sp/>standard<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>used<sp/>as<sp/>the<sp/>file<sp/>version.<sp/>See<sp/>the<sp/>manual<sp/>for<sp/>examples.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FILE_VERSION_FILTER<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>LAYOUT_FILE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>layout<sp/>file<sp/>which<sp/>will<sp/>be<sp/>parsed<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen.<sp/>The<sp/>layout<sp/>file<sp/>controls<sp/>the<sp/>global<sp/>structure<sp/>of<sp/>the<sp/>generated<sp/>output<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>an<sp/>output<sp/>format<sp/>independent<sp/>way.<sp/>The<sp/>create<sp/>the<sp/>layout<sp/>file<sp/>that<sp/>represents</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen&apos;s<sp/>defaults,<sp/>run<sp/>doxygen<sp/>with<sp/>the<sp/>-l<sp/>option.<sp/>You<sp/>can<sp/>optionally<sp/>specify<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>file<sp/>name<sp/>after<sp/>the<sp/>option,<sp/>if<sp/>omitted<sp/>DoxygenLayout.xml<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the<sp/>name</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>of<sp/>the<sp/>layout<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LAYOUT_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>warning<sp/>and<sp/>progress<sp/>messages</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>QUIET<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>turn<sp/>on/off<sp/>the<sp/>messages<sp/>that<sp/>are<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>by<sp/>doxygen.<sp/>Possible<sp/>values<sp/>are<sp/>YES<sp/>and<sp/>NO.<sp/>If<sp/>left<sp/>blank<sp/>NO<sp/>is<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QUIET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>WARNINGS<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>turn<sp/>on/off<sp/>the<sp/>warning<sp/>messages<sp/>that<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generated<sp/>by<sp/>doxygen.<sp/>Possible<sp/>values<sp/>are<sp/>YES<sp/>and<sp/>NO.<sp/>If<sp/>left<sp/>blank</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>NO<sp/>is<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">WARNINGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>WARN_IF_UNDOCUMENTED<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>then<sp/>doxygen<sp/>will<sp/>generate<sp/>warnings</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>for<sp/>undocumented<sp/>members.<sp/>If<sp/>EXTRACT_ALL<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>this<sp/>flag<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>automatically<sp/>be<sp/>disabled.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">WARN_IF_UNDOCUMENTED<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>WARN_IF_DOC_ERROR<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>warnings<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>potential<sp/>errors<sp/>in<sp/>the<sp/>documentation,<sp/>such<sp/>as<sp/>not<sp/>documenting<sp/>some</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>parameters<sp/>in<sp/>a<sp/>documented<sp/>function,<sp/>or<sp/>documenting<sp/>parameters<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>don&apos;t<sp/>exist<sp/>or<sp/>using<sp/>markup<sp/>commands<sp/>wrongly.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">WARN_IF_DOC_ERROR<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>WARN_NO_PARAMDOC<sp/>option<sp/>can<sp/>be<sp/>abled<sp/>to<sp/>get<sp/>warnings<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>functions<sp/>that<sp/>are<sp/>documented,<sp/>but<sp/>have<sp/>no<sp/>documentation<sp/>for<sp/>their<sp/>parameters</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>or<sp/>return<sp/>value.<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>doxygen<sp/>will<sp/>only<sp/>warn<sp/>about</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>wrong<sp/>or<sp/>incomplete<sp/>parameter<sp/>documentation,<sp/>but<sp/>not<sp/>about<sp/>the<sp/>absence<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">WARN_NO_PARAMDOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>WARN_FORMAT<sp/>tag<sp/>determines<sp/>the<sp/>format<sp/>of<sp/>the<sp/>warning<sp/>messages<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>can<sp/>produce.<sp/>The<sp/>string<sp/>should<sp/>contain<sp/>the<sp/>$file,<sp/>$line,<sp/>and<sp/>$text</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>tags,<sp/>which<sp/>will<sp/>be<sp/>replaced<sp/>by<sp/>the<sp/>file<sp/>and<sp/>line<sp/>number<sp/>from<sp/>which<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>warning<sp/>originated<sp/>and<sp/>the<sp/>warning<sp/>text.<sp/>Optionally<sp/>the<sp/>format<sp/>may<sp/>contain</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>$version,<sp/>which<sp/>will<sp/>be<sp/>replaced<sp/>by<sp/>the<sp/>version<sp/>of<sp/>the<sp/>file<sp/>(if<sp/>it<sp/>could</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>obtained<sp/>via<sp/>FILE_VERSION_FILTER)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">WARN_FORMAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&quot;$file:$line:<sp/>$text&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>WARN_LOGFILE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>file<sp/>to<sp/>which<sp/>warning</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>error<sp/>messages<sp/>should<sp/>be<sp/>written.<sp/>If<sp/>left<sp/>blank<sp/>the<sp/>output<sp/>is<sp/>written</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>stderr.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">WARN_LOGFILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>input<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>INPUT<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>files<sp/>and/or<sp/>directories<sp/>that<sp/>contain</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documented<sp/>source<sp/>files.<sp/>You<sp/>may<sp/>enter<sp/>file<sp/>names<sp/>like<sp/>&quot;myfile.cpp&quot;<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directories<sp/>like<sp/>&quot;/usr/src/myproject&quot;.<sp/>Separate<sp/>the<sp/>files<sp/>or<sp/>directories</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>with<sp/>spaces.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>VRAY_clusterThis.h<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThis.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisInstance.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisUtil.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisParms.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisCVEXUtil.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAYprocedural<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Doxyfile<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisAttributeUtils.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisRender.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisPostProcess.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisPreProcess.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VRAY_clusterThisRunCVEX.cpp<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>faq.txt<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc.txt<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>changes.txt<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>example_scenes.txt</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>character<sp/>encoding<sp/>of<sp/>the<sp/>source<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>doxygen<sp/>parses.<sp/>Internally<sp/>doxygen<sp/>uses<sp/>the<sp/>UTF-8<sp/>encoding,<sp/>which<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>also<sp/>the<sp/>default<sp/>input<sp/>encoding.<sp/>Doxygen<sp/>uses<sp/>libiconv<sp/>(or<sp/>the<sp/>iconv<sp/>built</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>into<sp/>libc)<sp/>for<sp/>the<sp/>transcoding.<sp/>See<sp/>http://www.gnu.org/software/libiconv<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>list<sp/>of<sp/>possible<sp/>encodings.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INPUT_ENCODING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>UTF-8</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>value<sp/>of<sp/>the<sp/>INPUT<sp/>tag<sp/>contains<sp/>directories,<sp/>you<sp/>can<sp/>use<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>FILE_PATTERNS<sp/>tag<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>wildcard<sp/>pattern<sp/>(like<sp/>*.cpp</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>*.h)<sp/>to<sp/>filter<sp/>out<sp/>the<sp/>source-files<sp/>in<sp/>the<sp/>directories.<sp/>If<sp/>left</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>blank<sp/>the<sp/>following<sp/>patterns<sp/>are<sp/>tested:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>*.c<sp/>*.cc<sp/>*.cxx<sp/>*.cpp<sp/>*.c++<sp/>*.java<sp/>*.ii<sp/>*.ixx<sp/>*.ipp<sp/>*.i++<sp/>*.inl<sp/>*.h<sp/>*.hh<sp/>*.hxx</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>*.hpp<sp/>*.h++<sp/>*.idl<sp/>*.odl<sp/>*.cs<sp/>*.php<sp/>*.php3<sp/>*.inc<sp/>*.m<sp/>*.mm<sp/>*.py<sp/>*.f90</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FILE_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>RECURSIVE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>turn<sp/>specify<sp/>whether<sp/>or<sp/>not<sp/>subdirectories</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>should<sp/>be<sp/>searched<sp/>for<sp/>input<sp/>files<sp/>as<sp/>well.<sp/>Possible<sp/>values<sp/>are<sp/>YES<sp/>and<sp/>NO.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>left<sp/>blank<sp/>NO<sp/>is<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">RECURSIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>EXCLUDE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>files<sp/>and/or<sp/>directories<sp/>that<sp/>should</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>excluded<sp/>from<sp/>the<sp/>INPUT<sp/>source<sp/>files.<sp/>This<sp/>way<sp/>you<sp/>can<sp/>easily<sp/>exclude<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>subdirectory<sp/>from<sp/>a<sp/>directory<sp/>tree<sp/>whose<sp/>root<sp/>is<sp/>specified<sp/>with<sp/>the<sp/>INPUT<sp/>tag.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXCLUDE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>EXCLUDE_SYMLINKS<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>select<sp/>whether<sp/>or<sp/>not<sp/>files<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directories<sp/>that<sp/>are<sp/>symbolic<sp/>links<sp/>(a<sp/>Unix<sp/>filesystem<sp/>feature)<sp/>are<sp/>excluded</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>from<sp/>the<sp/>input.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXCLUDE_SYMLINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>value<sp/>of<sp/>the<sp/>INPUT<sp/>tag<sp/>contains<sp/>directories,<sp/>you<sp/>can<sp/>use<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>EXCLUDE_PATTERNS<sp/>tag<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>wildcard<sp/>patterns<sp/>to<sp/>exclude</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>certain<sp/>files<sp/>from<sp/>those<sp/>directories.<sp/>Note<sp/>that<sp/>the<sp/>wildcards<sp/>are<sp/>matched</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>against<sp/>the<sp/>file<sp/>with<sp/>absolute<sp/>path,<sp/>so<sp/>to<sp/>exclude<sp/>all<sp/>test<sp/>directories</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>for<sp/>example<sp/>use<sp/>the<sp/>pattern<sp/>*/test/*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXCLUDE_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>EXCLUDE_SYMBOLS<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>symbol<sp/>names</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>(namespaces,<sp/>classes,<sp/>functions,<sp/>etc.)<sp/>that<sp/>should<sp/>be<sp/>excluded<sp/>from<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>output.<sp/>The<sp/>symbol<sp/>name<sp/>can<sp/>be<sp/>a<sp/>fully<sp/>qualified<sp/>name,<sp/>a<sp/>word,<sp/>or<sp/>if<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>wildcard<sp/>*<sp/>is<sp/>used,<sp/>a<sp/>substring.<sp/>Examples:<sp/>ANamespace,<sp/>AClass,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>AClass::ANamespace,<sp/>ANamespace::*Test</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXCLUDE_SYMBOLS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>EXAMPLE_PATH<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>files<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directories<sp/>that<sp/>contain<sp/>example<sp/>code<sp/>fragments<sp/>that<sp/>are<sp/>included<sp/>(see</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>\include<sp/>command).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXAMPLE_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>value<sp/>of<sp/>the<sp/>EXAMPLE_PATH<sp/>tag<sp/>contains<sp/>directories,<sp/>you<sp/>can<sp/>use<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>EXAMPLE_PATTERNS<sp/>tag<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>wildcard<sp/>pattern<sp/>(like<sp/>*.cpp</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>*.h)<sp/>to<sp/>filter<sp/>out<sp/>the<sp/>source-files<sp/>in<sp/>the<sp/>directories.<sp/>If<sp/>left</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>blank<sp/>all<sp/>files<sp/>are<sp/>included.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXAMPLE_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>EXAMPLE_RECURSIVE<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>subdirectories<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>searched<sp/>for<sp/>input<sp/>files<sp/>to<sp/>be<sp/>used<sp/>with<sp/>the<sp/>\include<sp/>or<sp/>\dontinclude</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>commands<sp/>irrespective<sp/>of<sp/>the<sp/>value<sp/>of<sp/>the<sp/>RECURSIVE<sp/>tag.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Possible<sp/>values<sp/>are<sp/>YES<sp/>and<sp/>NO.<sp/>If<sp/>left<sp/>blank<sp/>NO<sp/>is<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXAMPLE_RECURSIVE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>IMAGE_PATH<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>files<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directories<sp/>that<sp/>contain<sp/>image<sp/>that<sp/>are<sp/>included<sp/>in<sp/>the<sp/>documentation<sp/>(see</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>\image<sp/>command).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">IMAGE_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>INPUT_FILTER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>program<sp/>that<sp/>doxygen<sp/>should</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>invoke<sp/>to<sp/>filter<sp/>for<sp/>each<sp/>input<sp/>file.<sp/>Doxygen<sp/>will<sp/>invoke<sp/>the<sp/>filter<sp/>program</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>by<sp/>executing<sp/>(via<sp/>popen())<sp/>the<sp/>command<sp/>&lt;filter&gt;<sp/>&lt;input-file&gt;,<sp/>where<sp/>&lt;filter&gt;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>the<sp/>value<sp/>of<sp/>the<sp/>INPUT_FILTER<sp/>tag,<sp/>and<sp/>&lt;input-file&gt;<sp/>is<sp/>the<sp/>name<sp/>of<sp/>an</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>input<sp/>file.<sp/>Doxygen<sp/>will<sp/>then<sp/>use<sp/>the<sp/>output<sp/>that<sp/>the<sp/>filter<sp/>program<sp/>writes</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>standard<sp/>output.<sp/><sp/>If<sp/>FILTER_PATTERNS<sp/>is<sp/>specified,<sp/>this<sp/>tag<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>ignored.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INPUT_FILTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>FILTER_PATTERNS<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>filters<sp/>on<sp/>a<sp/>per<sp/>file<sp/>pattern</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>basis.<sp/><sp/>Doxygen<sp/>will<sp/>compare<sp/>the<sp/>file<sp/>name<sp/>with<sp/>each<sp/>pattern<sp/>and<sp/>apply<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>filter<sp/>if<sp/>there<sp/>is<sp/>a<sp/>match.<sp/><sp/>The<sp/>filters<sp/>are<sp/>a<sp/>list<sp/>of<sp/>the<sp/>form:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>pattern=filter<sp/>(like<sp/>*.cpp=my_cpp_filter).<sp/>See<sp/>INPUT_FILTER<sp/>for<sp/>further</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>info<sp/>on<sp/>how<sp/>filters<sp/>are<sp/>used.<sp/>If<sp/>FILTER_PATTERNS<sp/>is<sp/>empty,<sp/>INPUT_FILTER</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>applied<sp/>to<sp/>all<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FILTER_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>input<sp/>filter<sp/>(if<sp/>set<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>INPUT_FILTER)<sp/>will<sp/>be<sp/>used<sp/>to<sp/>filter<sp/>the<sp/>input<sp/>files<sp/>when<sp/>producing<sp/>source</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>files<sp/>to<sp/>browse<sp/>(i.e.<sp/>when<sp/>SOURCE_BROWSER<sp/>is<sp/>set<sp/>to<sp/>YES).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FILTER_SOURCE_FILES<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>source<sp/>browsing</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SOURCE_BROWSER<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>a<sp/>list<sp/>of<sp/>source<sp/>files<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>generated.<sp/>Documented<sp/>entities<sp/>will<sp/>be<sp/>cross-referenced<sp/>with<sp/>these<sp/>sources.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note:<sp/>To<sp/>get<sp/>rid<sp/>of<sp/>all<sp/>source<sp/>code<sp/>in<sp/>the<sp/>generated<sp/>output,<sp/>make<sp/>sure<sp/>also</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>VERBATIM_HEADERS<sp/>is<sp/>set<sp/>to<sp/>NO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SOURCE_BROWSER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Setting<sp/>the<sp/>INLINE_SOURCES<sp/>tag<sp/>to<sp/>YES<sp/>will<sp/>include<sp/>the<sp/>body</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>of<sp/>functions<sp/>and<sp/>classes<sp/>directly<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INLINE_SOURCES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Setting<sp/>the<sp/>STRIP_CODE_COMMENTS<sp/>tag<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>will<sp/>instruct</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>to<sp/>hide<sp/>any<sp/>special<sp/>comment<sp/>blocks<sp/>from<sp/>generated<sp/>source<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>fragments.<sp/>Normal<sp/>C<sp/>and<sp/>C++<sp/>comments<sp/>will<sp/>always<sp/>remain<sp/>visible.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">STRIP_CODE_COMMENTS<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>REFERENCED_BY_RELATION<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>then<sp/>for<sp/>each<sp/>documented<sp/>function<sp/>all<sp/>documented</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>functions<sp/>referencing<sp/>it<sp/>will<sp/>be<sp/>listed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REFERENCED_BY_RELATION<sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>REFERENCES_RELATION<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>then<sp/>for<sp/>each<sp/>documented<sp/>function<sp/>all<sp/>documented<sp/>entities</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>called/used<sp/>by<sp/>that<sp/>function<sp/>will<sp/>be<sp/>listed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REFERENCES_RELATION<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>REFERENCES_LINK_SOURCE<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>SOURCE_BROWSER<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>then<sp/>the<sp/>hyperlinks<sp/>from</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>functions<sp/>in<sp/>REFERENCES_RELATION<sp/>and<sp/>REFERENCED_BY_RELATION<sp/>lists<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>link<sp/>to<sp/>the<sp/>source<sp/>code.<sp/><sp/>Otherwise<sp/>they<sp/>will<sp/>link<sp/>to<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REFERENCES_LINK_SOURCE<sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>USE_HTAGS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>the<sp/>references<sp/>to<sp/>source<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>point<sp/>to<sp/>the<sp/>HTML<sp/>generated<sp/>by<sp/>the<sp/>htags(1)<sp/>tool<sp/>instead<sp/>of<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>built-in<sp/>source<sp/>browser.<sp/>The<sp/>htags<sp/>tool<sp/>is<sp/>part<sp/>of<sp/>GNU&apos;s<sp/>global<sp/>source</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>tagging<sp/>system<sp/>(see<sp/>http://www.gnu.org/software/global/global.html).<sp/>You</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>need<sp/>version<sp/>4.8.6<sp/>or<sp/>higher.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">USE_HTAGS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>VERBATIM_HEADERS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>then<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>generate<sp/>a<sp/>verbatim<sp/>copy<sp/>of<sp/>the<sp/>header<sp/>file<sp/>for<sp/>each<sp/>class<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>which<sp/>an<sp/>include<sp/>is<sp/>specified.<sp/>Set<sp/>to<sp/>NO<sp/>to<sp/>disable<sp/>this.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">VERBATIM_HEADERS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>alphabetical<sp/>class<sp/>index</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ALPHABETICAL_INDEX<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>an<sp/>alphabetical<sp/>index</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>of<sp/>all<sp/>compounds<sp/>will<sp/>be<sp/>generated.<sp/>Enable<sp/>this<sp/>if<sp/>the<sp/>project</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>contains<sp/>a<sp/>lot<sp/>of<sp/>classes,<sp/>structs,<sp/>unions<sp/>or<sp/>interfaces.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ALPHABETICAL_INDEX<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>alphabetical<sp/>index<sp/>is<sp/>enabled<sp/>(see<sp/>ALPHABETICAL_INDEX)<sp/>then</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>COLS_IN_ALPHA_INDEX<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>number<sp/>of<sp/>columns</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>which<sp/>this<sp/>list<sp/>will<sp/>be<sp/>split<sp/>(can<sp/>be<sp/>a<sp/>number<sp/>in<sp/>the<sp/>range<sp/>[1..20])</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">COLS_IN_ALPHA_INDEX<sp/><sp/><sp/><sp/>=<sp/>5</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>In<sp/>case<sp/>all<sp/>classes<sp/>in<sp/>a<sp/>project<sp/>start<sp/>with<sp/>a<sp/>common<sp/>prefix,<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>classes<sp/>will<sp/>be<sp/>put<sp/>under<sp/>the<sp/>same<sp/>header<sp/>in<sp/>the<sp/>alphabetical<sp/>index.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>IGNORE_PREFIX<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>prefixes<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>should<sp/>be<sp/>ignored<sp/>while<sp/>generating<sp/>the<sp/>index<sp/>headers.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">IGNORE_PREFIX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>HTML<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTML<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>HTML<sp/>output.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_HTML<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>HTML_OUTPUT<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>where<sp/>the<sp/>HTML<sp/>docs<sp/>will<sp/>be<sp/>put.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is<sp/>entered<sp/>the<sp/>value<sp/>of<sp/>OUTPUT_DIRECTORY<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>put<sp/>in<sp/>front<sp/>of<sp/>it.<sp/>If<sp/>left<sp/>blank<sp/>`html&apos;<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the<sp/>default<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>docs</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>HTML_FILE_EXTENSION<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>file<sp/>extension<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>each<sp/>generated<sp/>HTML<sp/>page<sp/>(for<sp/>example:<sp/>.htm,.php,.asp).<sp/>If<sp/>it<sp/>is<sp/>left<sp/>blank</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>will<sp/>generate<sp/>files<sp/>with<sp/>.html<sp/>extension.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_FILE_EXTENSION<sp/><sp/><sp/><sp/>=<sp/>.html</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>HTML_HEADER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>personal<sp/>HTML<sp/>header<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>each<sp/>generated<sp/>HTML<sp/>page.<sp/>If<sp/>it<sp/>is<sp/>left<sp/>blank<sp/>doxygen<sp/>will<sp/>generate<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>standard<sp/>header.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_HEADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>HTML_FOOTER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>personal<sp/>HTML<sp/>footer<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>each<sp/>generated<sp/>HTML<sp/>page.<sp/>If<sp/>it<sp/>is<sp/>left<sp/>blank<sp/>doxygen<sp/>will<sp/>generate<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>standard<sp/>footer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_FOOTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>HTML_STYLESHEET<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>user-defined<sp/>cascading</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>style<sp/>sheet<sp/>that<sp/>is<sp/>used<sp/>by<sp/>each<sp/>HTML<sp/>page.<sp/>It<sp/>can<sp/>be<sp/>used<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>fine-tune<sp/>the<sp/>look<sp/>of<sp/>the<sp/>HTML<sp/>output.<sp/>If<sp/>the<sp/>tag<sp/>is<sp/>left<sp/>blank<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>generate<sp/>a<sp/>default<sp/>style<sp/>sheet.<sp/>Note<sp/>that<sp/>doxygen<sp/>will<sp/>try<sp/>to<sp/>copy</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>style<sp/>sheet<sp/>file<sp/>to<sp/>the<sp/>HTML<sp/>output<sp/>directory,<sp/>so<sp/>don&apos;t<sp/>put<sp/>your<sp/>own</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>stylesheet<sp/>in<sp/>the<sp/>HTML<sp/>output<sp/>directory<sp/>as<sp/>well,<sp/>or<sp/>it<sp/>will<sp/>be<sp/>erased!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_STYLESHEET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HTML_TIMESTAMP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>the<sp/>footer<sp/>of<sp/>each<sp/>generated<sp/>HTML</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>page<sp/>will<sp/>contain<sp/>the<sp/>date<sp/>and<sp/>time<sp/>when<sp/>the<sp/>page<sp/>was<sp/>generated.<sp/>Setting</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>this<sp/>to<sp/>NO<sp/>can<sp/>help<sp/>when<sp/>comparing<sp/>the<sp/>output<sp/>of<sp/>multiple<sp/>runs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_TIMESTAMP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HTML_ALIGN_MEMBERS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>members<sp/>of<sp/>classes,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>files<sp/>or<sp/>namespaces<sp/>will<sp/>be<sp/>aligned<sp/>in<sp/>HTML<sp/>using<sp/>tables.<sp/>If<sp/>set<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>NO<sp/>a<sp/>bullet<sp/>list<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_ALIGN_MEMBERS<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>HTML_DYNAMIC_SECTIONS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>the<sp/>generated<sp/>HTML</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>will<sp/>contain<sp/>sections<sp/>that<sp/>can<sp/>be<sp/>hidden<sp/>and<sp/>shown<sp/>after<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>page<sp/>has<sp/>loaded.<sp/>For<sp/>this<sp/>to<sp/>work<sp/>a<sp/>browser<sp/>that<sp/>supports</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>JavaScript<sp/>and<sp/>DHTML<sp/>is<sp/>required<sp/>(for<sp/>instance<sp/>Mozilla<sp/>1.0+,<sp/>Firefox</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Netscape<sp/>6.0+,<sp/>Internet<sp/>explorer<sp/>5.0+,<sp/>Konqueror,<sp/>or<sp/>Safari).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HTML_DYNAMIC_SECTIONS<sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_DOCSET<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>additional<sp/>index<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>be<sp/>generated<sp/>that<sp/>can<sp/>be<sp/>used<sp/>as<sp/>input<sp/>for<sp/>Apple&apos;s<sp/>Xcode<sp/>3</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>integrated<sp/>development<sp/>environment,<sp/>introduced<sp/>with<sp/>OSX<sp/>10.5<sp/>(Leopard).</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>To<sp/>create<sp/>a<sp/>documentation<sp/>set,<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>Makefile<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>HTML<sp/>output<sp/>directory.<sp/>Running<sp/>make<sp/>will<sp/>produce<sp/>the<sp/>docset<sp/>in<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directory<sp/>and<sp/>running<sp/>&quot;make<sp/>install&quot;<sp/>will<sp/>install<sp/>the<sp/>docset<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>~/Library/Developer/Shared/Documentation/DocSets<sp/>so<sp/>that<sp/>Xcode<sp/>will<sp/>find</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>it<sp/>at<sp/>startup.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>http://developer.apple.com/tools/creatingdocsetswithdoxygen.html<sp/>for<sp/>more<sp/>information.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_DOCSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>GENERATE_DOCSET<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>this<sp/>tag<sp/>determines<sp/>the<sp/>name<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>feed.<sp/>A<sp/>documentation<sp/>feed<sp/>provides<sp/>an<sp/>umbrella<sp/>under<sp/>which<sp/>multiple</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>sets<sp/>from<sp/>a<sp/>single<sp/>provider<sp/>(such<sp/>as<sp/>a<sp/>company<sp/>or<sp/>product<sp/>suite)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>can<sp/>be<sp/>grouped.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOCSET_FEEDNAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&quot;Doxygen<sp/>generated<sp/>docs&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>GENERATE_DOCSET<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>this<sp/>tag<sp/>specifies<sp/>a<sp/>string<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>should<sp/>uniquely<sp/>identify<sp/>the<sp/>documentation<sp/>set<sp/>bundle.<sp/>This<sp/>should<sp/>be<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>reverse<sp/>domain-name<sp/>style<sp/>string,<sp/>e.g.<sp/>com.mycompany.MyDocSet.<sp/>Doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>append<sp/>.docset<sp/>to<sp/>the<sp/>name.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOCSET_BUNDLE_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>org.doxygen.Project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTMLHELP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>additional<sp/>index<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>be<sp/>generated<sp/>that<sp/>can<sp/>be<sp/>used<sp/>as<sp/>input<sp/>for<sp/>tools<sp/>like<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Microsoft<sp/>HTML<sp/>help<sp/>workshop<sp/>to<sp/>generate<sp/>a<sp/>compiled<sp/>HTML<sp/>help<sp/>file<sp/>(.chm)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>of<sp/>the<sp/>generated<sp/>HTML<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_HTMLHELP<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTMLHELP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>CHM_FILE<sp/>tag<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>file<sp/>name<sp/>of<sp/>the<sp/>resulting<sp/>.chm<sp/>file.<sp/>You</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>can<sp/>add<sp/>a<sp/>path<sp/>in<sp/>front<sp/>of<sp/>the<sp/>file<sp/>if<sp/>the<sp/>result<sp/>should<sp/>not<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>written<sp/>to<sp/>the<sp/>html<sp/>output<sp/>directory.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CHM_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTMLHELP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>HHC_LOCATION<sp/>tag<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>location<sp/>(absolute<sp/>path<sp/>including<sp/>file<sp/>name)<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>HTML<sp/>help<sp/>compiler<sp/>(hhc.exe).<sp/>If<sp/>non-empty<sp/>doxygen<sp/>will<sp/>try<sp/>to<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>HTML<sp/>help<sp/>compiler<sp/>on<sp/>the<sp/>generated<sp/>index.hhp.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HHC_LOCATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTMLHELP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>GENERATE_CHI<sp/>flag</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>controls<sp/>if<sp/>a<sp/>separate<sp/>.chi<sp/>index<sp/>file<sp/>is<sp/>generated<sp/>(YES)<sp/>or<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>it<sp/>should<sp/>be<sp/>included<sp/>in<sp/>the<sp/>master<sp/>.chm<sp/>file<sp/>(NO).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_CHI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTMLHELP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>CHM_INDEX_ENCODING</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>used<sp/>to<sp/>encode<sp/>HtmlHelp<sp/>index<sp/>(hhk),<sp/>content<sp/>(hhc)<sp/>and<sp/>project<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>content.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CHM_INDEX_ENCODING<sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTMLHELP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>BINARY_TOC<sp/>flag</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>controls<sp/>whether<sp/>a<sp/>binary<sp/>table<sp/>of<sp/>contents<sp/>is<sp/>generated<sp/>(YES)<sp/>or<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>normal<sp/>table<sp/>of<sp/>contents<sp/>(NO)<sp/>in<sp/>the<sp/>.chm<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">BINARY_TOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>TOC_EXPAND<sp/>flag<sp/>can<sp/>be<sp/>set<sp/>to<sp/>YES<sp/>to<sp/>add<sp/>extra<sp/>items<sp/>for<sp/>group<sp/>members</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>HTML<sp/>help<sp/>documentation<sp/>and<sp/>to<sp/>the<sp/>tree<sp/>view.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TOC_EXPAND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_QHP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>and<sp/>both<sp/>QHP_NAMESPACE<sp/>and<sp/>QHP_VIRTUAL_FOLDER</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>are<sp/>set,<sp/>an<sp/>additional<sp/>index<sp/>file<sp/>will<sp/>be<sp/>generated<sp/>that<sp/>can<sp/>be<sp/>used<sp/>as<sp/>input<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Qt&apos;s<sp/>qhelpgenerator<sp/>to<sp/>generate<sp/>a<sp/>Qt<sp/>Compressed<sp/>Help<sp/>(.qch)<sp/>of<sp/>the<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>HTML<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_QHP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>QHG_LOCATION<sp/>tag<sp/>is<sp/>specified,<sp/>the<sp/>QCH_FILE<sp/>tag<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>file<sp/>name<sp/>of<sp/>the<sp/>resulting<sp/>.qch<sp/>file.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>path<sp/>specified<sp/>is<sp/>relative<sp/>to<sp/>the<sp/>HTML<sp/>output<sp/>folder.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QCH_FILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>QHP_NAMESPACE<sp/>tag<sp/>specifies<sp/>the<sp/>namespace<sp/>to<sp/>use<sp/>when<sp/>generating</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Qt<sp/>Help<sp/>Project<sp/>output.<sp/>For<sp/>more<sp/>information<sp/>please<sp/>see</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>http://doc.trolltech.com/qthelpproject.html#namespace</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QHP_NAMESPACE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>org.doxygen.Project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>QHP_VIRTUAL_FOLDER<sp/>tag<sp/>specifies<sp/>the<sp/>namespace<sp/>to<sp/>use<sp/>when<sp/>generating</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Qt<sp/>Help<sp/>Project<sp/>output.<sp/>For<sp/>more<sp/>information<sp/>please<sp/>see</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>http://doc.trolltech.com/qthelpproject.html#virtual-folders</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QHP_VIRTUAL_FOLDER<sp/><sp/><sp/><sp/><sp/>=<sp/>doc</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>QHP_CUST_FILTER_NAME<sp/>is<sp/>set,<sp/>it<sp/>specifies<sp/>the<sp/>name<sp/>of<sp/>a<sp/>custom<sp/>filter<sp/>to<sp/>add.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>For<sp/>more<sp/>information<sp/>please<sp/>see</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>http://doc.trolltech.com/qthelpproject.html#custom-filters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QHP_CUST_FILTER_NAME<sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>QHP_CUST_FILT_ATTRS<sp/>tag<sp/>specifies<sp/>the<sp/>list<sp/>of<sp/>the<sp/>attributes<sp/>of<sp/>the<sp/>custom<sp/>filter<sp/>to<sp/>add.For<sp/>more<sp/>information<sp/>please<sp/>see</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>&lt;a<sp/>href=&quot;http://doc.trolltech.com/qthelpproject.html#custom-filters&quot;&gt;Qt<sp/>Help<sp/>Project<sp/>/<sp/>Custom<sp/>Filters&lt;/a&gt;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QHP_CUST_FILTER_ATTRS<sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>QHP_SECT_FILTER_ATTRS<sp/>tag<sp/>specifies<sp/>the<sp/>list<sp/>of<sp/>the<sp/>attributes<sp/>this<sp/>project&apos;s</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>filter<sp/>section<sp/>matches.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>&lt;a<sp/>href=&quot;http://doc.trolltech.com/qthelpproject.html#filter-attributes&quot;&gt;Qt<sp/>Help<sp/>Project<sp/>/<sp/>Filter<sp/>Attributes&lt;/a&gt;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QHP_SECT_FILTER_ATTRS<sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_QHP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>QHG_LOCATION<sp/>tag<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>location<sp/>of<sp/>Qt&apos;s<sp/>qhelpgenerator.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>non-empty<sp/>doxygen<sp/>will<sp/>try<sp/>to<sp/>run<sp/>qhelpgenerator<sp/>on<sp/>the<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>.qhp<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">QHG_LOCATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_ECLIPSEHELP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>additional<sp/>index<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>be<sp/>generated,<sp/>which<sp/>together<sp/>with<sp/>the<sp/>HTML<sp/>files,<sp/>form<sp/>an<sp/>Eclipse<sp/>help</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>plugin.<sp/>To<sp/>install<sp/>this<sp/>plugin<sp/>and<sp/>make<sp/>it<sp/>available<sp/>under<sp/>the<sp/>help<sp/>contents</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>menu<sp/>in<sp/>Eclipse,<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>directory<sp/>containing<sp/>the<sp/>HTML<sp/>and<sp/>XML</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>files<sp/>needs<sp/>to<sp/>be<sp/>copied<sp/>into<sp/>the<sp/>plugins<sp/>directory<sp/>of<sp/>eclipse.<sp/>The<sp/>name<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>directory<sp/>within<sp/>the<sp/>plugins<sp/>directory<sp/>should<sp/>be<sp/>the<sp/>same<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>ECLIPSE_DOC_ID<sp/>value.<sp/>After<sp/>copying<sp/>Eclipse<sp/>needs<sp/>to<sp/>be<sp/>restarted<sp/>before</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>help<sp/>appears.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_ECLIPSEHELP<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>A<sp/>unique<sp/>identifier<sp/>for<sp/>the<sp/>eclipse<sp/>help<sp/>plugin.<sp/>When<sp/>installing<sp/>the<sp/>plugin</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>directory<sp/>name<sp/>containing<sp/>the<sp/>HTML<sp/>and<sp/>XML<sp/>files<sp/>should<sp/>also<sp/>have</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>this<sp/>name.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ECLIPSE_DOC_ID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>org.doxygen.Project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>DISABLE_INDEX<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>turn<sp/>on/off<sp/>the<sp/>condensed<sp/>index<sp/>at</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>top<sp/>of<sp/>each<sp/>HTML<sp/>page.<sp/>The<sp/>value<sp/>NO<sp/>(the<sp/>default)<sp/>enables<sp/>the<sp/>index<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>value<sp/>YES<sp/>disables<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DISABLE_INDEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>set<sp/>the<sp/>number<sp/>of<sp/>enum<sp/>values<sp/>(range<sp/>[1..20])</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>doxygen<sp/>will<sp/>group<sp/>on<sp/>one<sp/>line<sp/>in<sp/>the<sp/>generated<sp/>HTML<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ENUM_VALUES_PER_LINE<sp/><sp/><sp/>=<sp/>4</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>GENERATE_TREEVIEW<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>whether<sp/>a<sp/>tree-like<sp/>index</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>structure<sp/>should<sp/>be<sp/>generated<sp/>to<sp/>display<sp/>hierarchical<sp/>information.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>tag<sp/>value<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>a<sp/>side<sp/>panel<sp/>will<sp/>be<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>containing<sp/>a<sp/>tree-like<sp/>index<sp/>structure<sp/>(just<sp/>like<sp/>the<sp/>one<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>generated<sp/>for<sp/>HTML<sp/>Help).<sp/>For<sp/>this<sp/>to<sp/>work<sp/>a<sp/>browser<sp/>that<sp/>supports</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>JavaScript,<sp/>DHTML,<sp/>CSS<sp/>and<sp/>frames<sp/>is<sp/>required<sp/>(i.e.<sp/>any<sp/>modern<sp/>browser).</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Windows<sp/>users<sp/>are<sp/>probably<sp/>better<sp/>off<sp/>using<sp/>the<sp/>HTML<sp/>help<sp/>feature.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_TREEVIEW<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>By<sp/>enabling<sp/>USE_INLINE_TREES,<sp/>doxygen<sp/>will<sp/>generate<sp/>the<sp/>Groups,<sp/>Directories,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>Class<sp/>Hierarchy<sp/>pages<sp/>using<sp/>a<sp/>tree<sp/>view<sp/>instead<sp/>of<sp/>an<sp/>ordered<sp/>list.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">USE_INLINE_TREES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>treeview<sp/>is<sp/>enabled<sp/>(see<sp/>GENERATE_TREEVIEW)<sp/>then<sp/>this<sp/>tag<sp/>can<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>used<sp/>to<sp/>set<sp/>the<sp/>initial<sp/>width<sp/>(in<sp/>pixels)<sp/>of<sp/>the<sp/>frame<sp/>in<sp/>which<sp/>the<sp/>tree</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>shown.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TREEVIEW_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>250</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Use<sp/>this<sp/>tag<sp/>to<sp/>change<sp/>the<sp/>font<sp/>size<sp/>of<sp/>Latex<sp/>formulas<sp/>included</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>as<sp/>images<sp/>in<sp/>the<sp/>HTML<sp/>documentation.<sp/>The<sp/>default<sp/>is<sp/>10.<sp/>Note<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>when<sp/>you<sp/>change<sp/>the<sp/>font<sp/>size<sp/>after<sp/>a<sp/>successful<sp/>doxygen<sp/>run<sp/>you<sp/>need</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>manually<sp/>remove<sp/>any<sp/>form_*.png<sp/>images<sp/>from<sp/>the<sp/>HTML<sp/>output<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>force<sp/>them<sp/>to<sp/>be<sp/>regenerated.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FORMULA_FONTSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>the<sp/>SEARCHENGINE<sp/>tag<sp/>is<sp/>enabled<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>search<sp/>box</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>for<sp/>the<sp/>HTML<sp/>output.<sp/>The<sp/>underlying<sp/>search<sp/>engine<sp/>uses<sp/>javascript</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>DHTML<sp/>and<sp/>should<sp/>work<sp/>on<sp/>any<sp/>modern<sp/>browser.<sp/>Note<sp/>that<sp/>when<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>HTML<sp/>help<sp/>(GENERATE_HTMLHELP),<sp/>Qt<sp/>help<sp/>(GENERATE_QHP),<sp/>or<sp/>docsets</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>(GENERATE_DOCSET)<sp/>there<sp/>is<sp/>already<sp/>a<sp/>search<sp/>function<sp/>so<sp/>this<sp/>one<sp/>should</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>typically<sp/>be<sp/>disabled.<sp/>For<sp/>large<sp/>projects<sp/>the<sp/>javascript<sp/>based<sp/>search<sp/>engine</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>can<sp/>be<sp/>slow,<sp/>then<sp/>enabling<sp/>SERVER_BASED_SEARCH<sp/>may<sp/>provide<sp/>a<sp/>better<sp/>solution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SEARCHENGINE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>the<sp/>SERVER_BASED_SEARCH<sp/>tag<sp/>is<sp/>enabled<sp/>the<sp/>search<sp/>engine<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>implemented<sp/>using<sp/>a<sp/>PHP<sp/>enabled<sp/>web<sp/>server<sp/>instead<sp/>of<sp/>at<sp/>the<sp/>web<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>using<sp/>Javascript.<sp/>Doxygen<sp/>will<sp/>generate<sp/>the<sp/>search<sp/>PHP<sp/>script<sp/>and<sp/>index</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>file<sp/>to<sp/>put<sp/>on<sp/>the<sp/>web<sp/>server.<sp/>The<sp/>advantage<sp/>of<sp/>the<sp/>server</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>based<sp/>approach<sp/>is<sp/>that<sp/>it<sp/>scales<sp/>better<sp/>to<sp/>large<sp/>projects<sp/>and<sp/>allows</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>full<sp/>text<sp/>search.<sp/>The<sp/>disadvances<sp/>is<sp/>that<sp/>it<sp/>is<sp/>more<sp/>difficult<sp/>to<sp/>setup</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>does<sp/>not<sp/>have<sp/>live<sp/>searching<sp/>capabilities.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SERVER_BASED_SEARCH<sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>LaTeX<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_LATEX<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>Latex<sp/>output.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_LATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>LATEX_OUTPUT<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>where<sp/>the<sp/>LaTeX<sp/>docs<sp/>will<sp/>be<sp/>put.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is<sp/>entered<sp/>the<sp/>value<sp/>of<sp/>OUTPUT_DIRECTORY<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>put<sp/>in<sp/>front<sp/>of<sp/>it.<sp/>If<sp/>left<sp/>blank<sp/>`latex&apos;<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the<sp/>default<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LATEX_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>latex</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>LATEX_CMD_NAME<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>LaTeX<sp/>command<sp/>name<sp/>to<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>invoked.<sp/>If<sp/>left<sp/>blank<sp/>`latex&apos;<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the<sp/>default<sp/>command<sp/>name.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note<sp/>that<sp/>when<sp/>enabling<sp/>USE_PDFLATEX<sp/>this<sp/>option<sp/>is<sp/>only<sp/>used<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generating<sp/>bitmaps<sp/>for<sp/>formulas<sp/>in<sp/>the<sp/>HTML<sp/>output,<sp/>but<sp/>not<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Makefile<sp/>that<sp/>is<sp/>written<sp/>to<sp/>the<sp/>output<sp/>directory.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LATEX_CMD_NAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>latex</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>MAKEINDEX_CMD_NAME<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>command<sp/>name<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>index<sp/>for<sp/>LaTeX.<sp/>If<sp/>left<sp/>blank<sp/>`makeindex&apos;<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>default<sp/>command<sp/>name.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MAKEINDEX_CMD_NAME<sp/><sp/><sp/><sp/><sp/>=<sp/>makeindex</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>COMPACT_LATEX<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>generates<sp/>more<sp/>compact</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>LaTeX<sp/>documents.<sp/>This<sp/>may<sp/>be<sp/>useful<sp/>for<sp/>small<sp/>projects<sp/>and<sp/>may<sp/>help<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>save<sp/>some<sp/>trees<sp/>in<sp/>general.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">COMPACT_LATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>PAPER_TYPE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>set<sp/>the<sp/>paper<sp/>type<sp/>that<sp/>is<sp/>used</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>by<sp/>the<sp/>printer.<sp/>Possible<sp/>values<sp/>are:<sp/>a4,<sp/>a4wide,<sp/>letter,<sp/>legal<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>executive.<sp/>If<sp/>left<sp/>blank<sp/>a4wide<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PAPER_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>a4wide</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>EXTRA_PACKAGES<sp/>tag<sp/>can<sp/>be<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>names<sp/>of<sp/>LaTeX</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>packages<sp/>that<sp/>should<sp/>be<sp/>included<sp/>in<sp/>the<sp/>LaTeX<sp/>output.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTRA_PACKAGES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>LATEX_HEADER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>personal<sp/>LaTeX<sp/>header<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>generated<sp/>latex<sp/>document.<sp/>The<sp/>header<sp/>should<sp/>contain<sp/>everything<sp/>until</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>first<sp/>chapter.<sp/>If<sp/>it<sp/>is<sp/>left<sp/>blank<sp/>doxygen<sp/>will<sp/>generate<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>standard<sp/>header.<sp/>Notice:<sp/>only<sp/>use<sp/>this<sp/>tag<sp/>if<sp/>you<sp/>know<sp/>what<sp/>you<sp/>are<sp/>doing!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LATEX_HEADER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>PDF_HYPERLINKS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>LaTeX<sp/>that<sp/>is<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>prepared<sp/>for<sp/>conversion<sp/>to<sp/>pdf<sp/>(using<sp/>ps2pdf).<sp/>The<sp/>pdf<sp/>file<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>contain<sp/>links<sp/>(just<sp/>like<sp/>the<sp/>HTML<sp/>output)<sp/>instead<sp/>of<sp/>page<sp/>references</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>makes<sp/>the<sp/>output<sp/>suitable<sp/>for<sp/>online<sp/>browsing<sp/>using<sp/>a<sp/>pdf<sp/>viewer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PDF_HYPERLINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>USE_PDFLATEX<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>pdflatex<sp/>will<sp/>be<sp/>used<sp/>instead<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>plain<sp/>latex<sp/>in<sp/>the<sp/>generated<sp/>Makefile.<sp/>Set<sp/>this<sp/>option<sp/>to<sp/>YES<sp/>to<sp/>get<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>higher<sp/>quality<sp/>PDF<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">USE_PDFLATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>LATEX_BATCHMODE<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>add<sp/>the<sp/>\\batchmode.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>command<sp/>to<sp/>the<sp/>generated<sp/>LaTeX<sp/>files.<sp/>This<sp/>will<sp/>instruct<sp/>LaTeX<sp/>to<sp/>keep</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>running<sp/>if<sp/>errors<sp/>occur,<sp/>instead<sp/>of<sp/>asking<sp/>the<sp/>user<sp/>for<sp/>help.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>option<sp/>is<sp/>also<sp/>used<sp/>when<sp/>generating<sp/>formulas<sp/>in<sp/>HTML.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LATEX_BATCHMODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>LATEX_HIDE_INDICES<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>include<sp/>the<sp/>index<sp/>chapters<sp/>(such<sp/>as<sp/>File<sp/>Index,<sp/>Compound<sp/>Index,<sp/>etc.)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>the<sp/>output.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LATEX_HIDE_INDICES<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>LATEX_SOURCE_CODE<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>include</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>source<sp/>code<sp/>with<sp/>syntax<sp/>highlighting<sp/>in<sp/>the<sp/>LaTeX<sp/>output.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note<sp/>that<sp/>which<sp/>sources<sp/>are<sp/>shown<sp/>also<sp/>depends<sp/>on<sp/>other<sp/>settings</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>such<sp/>as<sp/>SOURCE_BROWSER.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LATEX_SOURCE_CODE<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>RTF<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_RTF<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>will<sp/>generate<sp/>RTF<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>RTF<sp/>output<sp/>is<sp/>optimized<sp/>for<sp/>Word<sp/>97<sp/>and<sp/>may<sp/>not<sp/>look<sp/>very<sp/>pretty<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>other<sp/>RTF<sp/>readers<sp/>or<sp/>editors.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_RTF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>RTF_OUTPUT<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>where<sp/>the<sp/>RTF<sp/>docs<sp/>will<sp/>be<sp/>put.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is<sp/>entered<sp/>the<sp/>value<sp/>of<sp/>OUTPUT_DIRECTORY<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>put<sp/>in<sp/>front<sp/>of<sp/>it.<sp/>If<sp/>left<sp/>blank<sp/>`rtf&apos;<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the<sp/>default<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">RTF_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>rtf</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>COMPACT_RTF<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>generates<sp/>more<sp/>compact</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>RTF<sp/>documents.<sp/>This<sp/>may<sp/>be<sp/>useful<sp/>for<sp/>small<sp/>projects<sp/>and<sp/>may<sp/>help<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>save<sp/>some<sp/>trees<sp/>in<sp/>general.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">COMPACT_RTF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>RTF_HYPERLINKS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>RTF<sp/>that<sp/>is<sp/>generated</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>contain<sp/>hyperlink<sp/>fields.<sp/>The<sp/>RTF<sp/>file<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>contain<sp/>links<sp/>(just<sp/>like<sp/>the<sp/>HTML<sp/>output)<sp/>instead<sp/>of<sp/>page<sp/>references.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>makes<sp/>the<sp/>output<sp/>suitable<sp/>for<sp/>online<sp/>browsing<sp/>using<sp/>WORD<sp/>or<sp/>other</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>programs<sp/>which<sp/>support<sp/>those<sp/>fields.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note:<sp/>wordpad<sp/>(write)<sp/>and<sp/>others<sp/>do<sp/>not<sp/>support<sp/>links.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">RTF_HYPERLINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Load<sp/>stylesheet<sp/>definitions<sp/>from<sp/>file.<sp/>Syntax<sp/>is<sp/>similar<sp/>to<sp/>doxygen&apos;s</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>config<sp/>file,<sp/>i.e.<sp/>a<sp/>series<sp/>of<sp/>assignments.<sp/>You<sp/>only<sp/>have<sp/>to<sp/>provide</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>replacements,<sp/>missing<sp/>definitions<sp/>are<sp/>set<sp/>to<sp/>their<sp/>default<sp/>value.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">RTF_STYLESHEET_FILE<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>optional<sp/>variables<sp/>used<sp/>in<sp/>the<sp/>generation<sp/>of<sp/>an<sp/>rtf<sp/>document.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Syntax<sp/>is<sp/>similar<sp/>to<sp/>doxygen&apos;s<sp/>config<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">RTF_EXTENSIONS_FILE<sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>man<sp/>page<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_MAN<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>man<sp/>pages</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_MAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>MAN_OUTPUT<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>where<sp/>the<sp/>man<sp/>pages<sp/>will<sp/>be<sp/>put.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is<sp/>entered<sp/>the<sp/>value<sp/>of<sp/>OUTPUT_DIRECTORY<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>put<sp/>in<sp/>front<sp/>of<sp/>it.<sp/>If<sp/>left<sp/>blank<sp/>`man&apos;<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the<sp/>default<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MAN_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>man</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>MAN_EXTENSION<sp/>tag<sp/>determines<sp/>the<sp/>extension<sp/>that<sp/>is<sp/>added<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>generated<sp/>man<sp/>pages<sp/>(default<sp/>is<sp/>the<sp/>subroutine&apos;s<sp/>section<sp/>.3)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MAN_EXTENSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>.3</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>MAN_LINKS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>and<sp/>Doxygen<sp/>generates<sp/>man<sp/>output,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>then<sp/>it<sp/>will<sp/>generate<sp/>one<sp/>additional<sp/>man<sp/>file<sp/>for<sp/>each<sp/>entity</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documented<sp/>in<sp/>the<sp/>real<sp/>man<sp/>page(s).<sp/>These<sp/>additional<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>only<sp/>source<sp/>the<sp/>real<sp/>man<sp/>page,<sp/>but<sp/>without<sp/>them<sp/>the<sp/>man<sp/>command</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>would<sp/>be<sp/>unable<sp/>to<sp/>find<sp/>the<sp/>correct<sp/>page.<sp/>The<sp/>default<sp/>is<sp/>NO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MAN_LINKS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>XML<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_XML<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>an<sp/>XML<sp/>file<sp/>that<sp/>captures<sp/>the<sp/>structure<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>code<sp/>including<sp/>all<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_XML<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>XML_OUTPUT<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>where<sp/>the<sp/>XML<sp/>pages<sp/>will<sp/>be<sp/>put.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is<sp/>entered<sp/>the<sp/>value<sp/>of<sp/>OUTPUT_DIRECTORY<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>put<sp/>in<sp/>front<sp/>of<sp/>it.<sp/>If<sp/>left<sp/>blank<sp/>`xml&apos;<sp/>will<sp/>be<sp/>used<sp/>as<sp/>the<sp/>default<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">XML_OUTPUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>xml</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>XML_SCHEMA<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>an<sp/>XML<sp/>schema,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>which<sp/>can<sp/>be<sp/>used<sp/>by<sp/>a<sp/>validating<sp/>XML<sp/>parser<sp/>to<sp/>check<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>syntax<sp/>of<sp/>the<sp/>XML<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">XML_SCHEMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>XML_DTD<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>an<sp/>XML<sp/>DTD,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>which<sp/>can<sp/>be<sp/>used<sp/>by<sp/>a<sp/>validating<sp/>XML<sp/>parser<sp/>to<sp/>check<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>syntax<sp/>of<sp/>the<sp/>XML<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">XML_DTD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>XML_PROGRAMLISTING<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>dump<sp/>the<sp/>program<sp/>listings<sp/>(including<sp/>syntax<sp/>highlighting</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>cross-referencing<sp/>information)<sp/>to<sp/>the<sp/>XML<sp/>output.<sp/>Note<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>enabling<sp/>this<sp/>will<sp/>significantly<sp/>increase<sp/>the<sp/>size<sp/>of<sp/>the<sp/>XML<sp/>output.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">XML_PROGRAMLISTING<sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>for<sp/>the<sp/>AutoGen<sp/>Definitions<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_AUTOGEN_DEF<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>an<sp/>AutoGen<sp/>Definitions<sp/>(see<sp/>autogen.sf.net)<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>captures<sp/>the<sp/>structure<sp/>of<sp/>the<sp/>code<sp/>including<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation.<sp/>Note<sp/>that<sp/>this<sp/>feature<sp/>is<sp/>still<sp/>experimental</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>incomplete<sp/>at<sp/>the<sp/>moment.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_AUTOGEN_DEF<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>Perl<sp/>module<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_PERLMOD<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>a<sp/>Perl<sp/>module<sp/>file<sp/>that<sp/>captures<sp/>the<sp/>structure<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>code<sp/>including<sp/>all<sp/>documentation.<sp/>Note<sp/>that<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>feature<sp/>is<sp/>still<sp/>experimental<sp/>and<sp/>incomplete<sp/>at<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>moment.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_PERLMOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>PERLMOD_LATEX<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>will<sp/>generate</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>necessary<sp/>Makefile<sp/>rules,<sp/>Perl<sp/>scripts<sp/>and<sp/>LaTeX<sp/>code<sp/>to<sp/>be<sp/>able</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>to<sp/>generate<sp/>PDF<sp/>and<sp/>DVI<sp/>output<sp/>from<sp/>the<sp/>Perl<sp/>module<sp/>output.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PERLMOD_LATEX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>PERLMOD_PRETTY<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>the<sp/>Perl<sp/>module<sp/>output<sp/>will<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>nicely<sp/>formatted<sp/>so<sp/>it<sp/>can<sp/>be<sp/>parsed<sp/>by<sp/>a<sp/>human<sp/>reader.<sp/><sp/>This<sp/>is<sp/>useful</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>if<sp/>you<sp/>want<sp/>to<sp/>understand<sp/>what<sp/>is<sp/>going<sp/>on.<sp/><sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>if<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>NO<sp/>the<sp/>size<sp/>of<sp/>the<sp/>Perl<sp/>module<sp/>output<sp/>will<sp/>be<sp/>much<sp/>smaller</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>and<sp/>Perl<sp/>will<sp/>parse<sp/>it<sp/>just<sp/>the<sp/>same.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PERLMOD_PRETTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>names<sp/>of<sp/>the<sp/>make<sp/>variables<sp/>in<sp/>the<sp/>generated<sp/>doxyrules.make<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>are<sp/>prefixed<sp/>with<sp/>the<sp/>string<sp/>contained<sp/>in<sp/>PERLMOD_MAKEVAR_PREFIX.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>is<sp/>useful<sp/>so<sp/>different<sp/>doxyrules.make<sp/>files<sp/>included<sp/>by<sp/>the<sp/>same</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Makefile<sp/>don&apos;t<sp/>overwrite<sp/>each<sp/>other&apos;s<sp/>variables.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PERLMOD_MAKEVAR_PREFIX<sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>preprocessor</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ENABLE_PREPROCESSING<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>evaluate<sp/>all<sp/>C-preprocessor<sp/>directives<sp/>found<sp/>in<sp/>the<sp/>sources<sp/>and<sp/>include</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ENABLE_PREPROCESSING<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>MACRO_EXPANSION<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>Doxygen<sp/>will<sp/>expand<sp/>all<sp/>macro</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>names<sp/>in<sp/>the<sp/>source<sp/>code.<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)<sp/>only<sp/>conditional</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>compilation<sp/>will<sp/>be<sp/>performed.<sp/>Macro<sp/>expansion<sp/>can<sp/>be<sp/>done<sp/>in<sp/>a<sp/>controlled</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>way<sp/>by<sp/>setting<sp/>EXPAND_ONLY_PREDEF<sp/>to<sp/>YES.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MACRO_EXPANSION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>EXPAND_ONLY_PREDEF<sp/>and<sp/>MACRO_EXPANSION<sp/>tags<sp/>are<sp/>both<sp/>set<sp/>to<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>then<sp/>the<sp/>macro<sp/>expansion<sp/>is<sp/>limited<sp/>to<sp/>the<sp/>macros<sp/>specified<sp/>with<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>PREDEFINED<sp/>and<sp/>EXPAND_AS_DEFINED<sp/>tags.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXPAND_ONLY_PREDEF<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SEARCH_INCLUDES<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>the<sp/>includes<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>the<sp/>INCLUDE_PATH<sp/>(see<sp/>below)<sp/>will<sp/>be<sp/>search<sp/>if<sp/>a<sp/>#include<sp/>is<sp/>found.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SEARCH_INCLUDES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>INCLUDE_PATH<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>directories<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>contain<sp/>include<sp/>files<sp/>that<sp/>are<sp/>not<sp/>input<sp/>files<sp/>but<sp/>should<sp/>be<sp/>processed<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>preprocessor.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INCLUDE_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>You<sp/>can<sp/>use<sp/>the<sp/>INCLUDE_FILE_PATTERNS<sp/>tag<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>wildcard</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>patterns<sp/>(like<sp/>*.h<sp/>and<sp/>*.hpp)<sp/>to<sp/>filter<sp/>out<sp/>the<sp/>header-files<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directories.<sp/>If<sp/>left<sp/>blank,<sp/>the<sp/>patterns<sp/>specified<sp/>with<sp/>FILE_PATTERNS<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INCLUDE_FILE_PATTERNS<sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>PREDEFINED<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>macro<sp/>names<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>are<sp/>defined<sp/>before<sp/>the<sp/>preprocessor<sp/>is<sp/>started<sp/>(similar<sp/>to<sp/>the<sp/>-D<sp/>option<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>gcc).<sp/>The<sp/>argument<sp/>of<sp/>the<sp/>tag<sp/>is<sp/>a<sp/>list<sp/>of<sp/>macros<sp/>of<sp/>the<sp/>form:<sp/>name</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>or<sp/>name=definition<sp/>(no<sp/>spaces).<sp/>If<sp/>the<sp/>definition<sp/>and<sp/>the<sp/>=<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>omitted<sp/>=1<sp/>is<sp/>assumed.<sp/>To<sp/>prevent<sp/>a<sp/>macro<sp/>definition<sp/>from<sp/>being</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>undefined<sp/>via<sp/>#undef<sp/>or<sp/>recursively<sp/>expanded<sp/>use<sp/>the<sp/>:=<sp/>operator</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>instead<sp/>of<sp/>the<sp/>=<sp/>operator.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PREDEFINED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>MACRO_EXPANSION<sp/>and<sp/>EXPAND_ONLY_PREDEF<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>this<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>a<sp/>list<sp/>of<sp/>macro<sp/>names<sp/>that<sp/>should<sp/>be<sp/>expanded.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>macro<sp/>definition<sp/>that<sp/>is<sp/>found<sp/>in<sp/>the<sp/>sources<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Use<sp/>the<sp/>PREDEFINED<sp/>tag<sp/>if<sp/>you<sp/>want<sp/>to<sp/>use<sp/>a<sp/>different<sp/>macro<sp/>definition.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXPAND_AS_DEFINED<sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SKIP_FUNCTION_MACROS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>then</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen&apos;s<sp/>preprocessor<sp/>will<sp/>remove<sp/>all<sp/>function-like<sp/>macros<sp/>that<sp/>are<sp/>alone</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>on<sp/>a<sp/>line,<sp/>have<sp/>an<sp/>all<sp/>uppercase<sp/>name,<sp/>and<sp/>do<sp/>not<sp/>end<sp/>with<sp/>a<sp/>semicolon.<sp/>Such</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>function<sp/>macros<sp/>are<sp/>typically<sp/>used<sp/>for<sp/>boiler-plate<sp/>code,<sp/>and<sp/>will<sp/>confuse</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>parser<sp/>if<sp/>not<sp/>removed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">SKIP_FUNCTION_MACROS<sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration::additions<sp/>related<sp/>to<sp/>external<sp/>references</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>TAGFILES<sp/>option<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>tagfiles.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Optionally<sp/>an<sp/>initial<sp/>location<sp/>of<sp/>the<sp/>external<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>can<sp/>be<sp/>added<sp/>for<sp/>each<sp/>tagfile.<sp/>The<sp/>format<sp/>of<sp/>a<sp/>tag<sp/>file<sp/>without</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>this<sp/>location<sp/>is<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/><sp/><sp/>TAGFILES<sp/>=<sp/>file1<sp/>file2<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Adding<sp/>location<sp/>for<sp/>the<sp/>tag<sp/>files<sp/>is<sp/>done<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/><sp/><sp/>TAGFILES<sp/>=<sp/>file1=loc1<sp/>&quot;file2<sp/>=<sp/>loc2&quot;<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>where<sp/>&quot;loc1&quot;<sp/>and<sp/>&quot;loc2&quot;<sp/>can<sp/>be<sp/>relative<sp/>or<sp/>absolute<sp/>paths<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>URLs.<sp/>If<sp/>a<sp/>location<sp/>is<sp/>present<sp/>for<sp/>each<sp/>tag,<sp/>the<sp/>installdox<sp/>tool</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>does<sp/>not<sp/>have<sp/>to<sp/>be<sp/>run<sp/>to<sp/>correct<sp/>the<sp/>links.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note<sp/>that<sp/>each<sp/>tag<sp/>file<sp/>must<sp/>have<sp/>a<sp/>unique<sp/>name</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>(where<sp/>the<sp/>name<sp/>does<sp/>NOT<sp/>include<sp/>the<sp/>path)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>a<sp/>tag<sp/>file<sp/>is<sp/>not<sp/>located<sp/>in<sp/>the<sp/>directory<sp/>in<sp/>which<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>is<sp/>run,<sp/>you<sp/>must<sp/>also<sp/>specify<sp/>the<sp/>path<sp/>to<sp/>the<sp/>tagfile<sp/>here.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TAGFILES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>a<sp/>file<sp/>name<sp/>is<sp/>specified<sp/>after<sp/>GENERATE_TAGFILE,<sp/>doxygen<sp/>will<sp/>create</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>a<sp/>tag<sp/>file<sp/>that<sp/>is<sp/>based<sp/>on<sp/>the<sp/>input<sp/>files<sp/>it<sp/>reads.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_TAGFILE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ALLEXTERNALS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>all<sp/>external<sp/>classes<sp/>will<sp/>be<sp/>listed</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>the<sp/>class<sp/>index.<sp/>If<sp/>set<sp/>to<sp/>NO<sp/>only<sp/>the<sp/>inherited<sp/>external<sp/>classes</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>be<sp/>listed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ALLEXTERNALS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>EXTERNAL_GROUPS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>all<sp/>external<sp/>groups<sp/>will<sp/>be<sp/>listed</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>the<sp/>modules<sp/>index.<sp/>If<sp/>set<sp/>to<sp/>NO,<sp/>only<sp/>the<sp/>current<sp/>project&apos;s<sp/>groups<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>listed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">EXTERNAL_GROUPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>PERL_PATH<sp/>should<sp/>be<sp/>the<sp/>absolute<sp/>path<sp/>and<sp/>name<sp/>of<sp/>the<sp/>perl<sp/>script</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>interpreter<sp/>(i.e.<sp/>the<sp/>result<sp/>of<sp/>`which<sp/>perl&apos;).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">PERL_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>/usr/bin/perl</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>dot<sp/>tool</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CLASS_DIAGRAMS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>a<sp/>inheritance<sp/>diagram<sp/>(in<sp/>HTML,<sp/>RTF<sp/>and<sp/>LaTeX)<sp/>for<sp/>classes<sp/>with<sp/>base</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>or<sp/>super<sp/>classes.<sp/>Setting<sp/>the<sp/>tag<sp/>to<sp/>NO<sp/>turns<sp/>the<sp/>diagrams<sp/>off.<sp/>Note<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>this<sp/>option<sp/>is<sp/>superseded<sp/>by<sp/>the<sp/>HAVE_DOT<sp/>option<sp/>below.<sp/>This<sp/>is<sp/>only<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>fallback.<sp/>It<sp/>is<sp/>recommended<sp/>to<sp/>install<sp/>and<sp/>use<sp/>dot,<sp/>since<sp/>it<sp/>yields<sp/>more</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>powerful<sp/>graphs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CLASS_DIAGRAMS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>You<sp/>can<sp/>define<sp/>message<sp/>sequence<sp/>charts<sp/>within<sp/>doxygen<sp/>comments<sp/>using<sp/>the<sp/>\msc</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>command.<sp/>Doxygen<sp/>will<sp/>then<sp/>run<sp/>the<sp/>mscgen<sp/>tool<sp/>(see</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>http://www.mcternan.me.uk/mscgen/)<sp/>to<sp/>produce<sp/>the<sp/>chart<sp/>and<sp/>insert<sp/>it<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation.<sp/>The<sp/>MSCGEN_PATH<sp/>tag<sp/>allows<sp/>you<sp/>to<sp/>specify<sp/>the<sp/>directory<sp/>where</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>mscgen<sp/>tool<sp/>resides.<sp/>If<sp/>left<sp/>empty<sp/>the<sp/>tool<sp/>is<sp/>assumed<sp/>to<sp/>be<sp/>found<sp/>in<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>default<sp/>search<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MSCGEN_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>inheritance<sp/>and<sp/>collaboration<sp/>graphs<sp/>will<sp/>hide</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>inheritance<sp/>and<sp/>usage<sp/>relations<sp/>if<sp/>the<sp/>target<sp/>is<sp/>undocumented</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>or<sp/>is<sp/>not<sp/>a<sp/>class.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HIDE_UNDOC_RELATIONS<sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>you<sp/>set<sp/>the<sp/>HAVE_DOT<sp/>tag<sp/>to<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>assume<sp/>the<sp/>dot<sp/>tool<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>available<sp/>from<sp/>the<sp/>path.<sp/>This<sp/>tool<sp/>is<sp/>part<sp/>of<sp/>Graphviz,<sp/>a<sp/>graph<sp/>visualization</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>toolkit<sp/>from<sp/>AT&amp;T<sp/>and<sp/>Lucent<sp/>Bell<sp/>Labs.<sp/>The<sp/>other<sp/>options<sp/>in<sp/>this<sp/>section</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>have<sp/>no<sp/>effect<sp/>if<sp/>this<sp/>option<sp/>is<sp/>set<sp/>to<sp/>NO<sp/>(the<sp/>default)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">HAVE_DOT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>By<sp/>default<sp/>doxygen<sp/>will<sp/>write<sp/>a<sp/>font<sp/>called<sp/>FreeSans.ttf<sp/>to<sp/>the<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directory<sp/>and<sp/>reference<sp/>it<sp/>in<sp/>all<sp/>dot<sp/>files<sp/>that<sp/>doxygen<sp/>generates.<sp/>This</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>font<sp/>does<sp/>not<sp/>include<sp/>all<sp/>possible<sp/>unicode<sp/>characters<sp/>however,<sp/>so<sp/>when<sp/>you<sp/>need</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>these<sp/>(or<sp/>just<sp/>want<sp/>a<sp/>differently<sp/>looking<sp/>font)<sp/>you<sp/>can<sp/>specify<sp/>the<sp/>font<sp/>name</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>using<sp/>DOT_FONTNAME.<sp/>You<sp/>need<sp/>need<sp/>to<sp/>make<sp/>sure<sp/>dot<sp/>is<sp/>able<sp/>to<sp/>find<sp/>the<sp/>font,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>which<sp/>can<sp/>be<sp/>done<sp/>by<sp/>putting<sp/>it<sp/>in<sp/>a<sp/>standard<sp/>location<sp/>or<sp/>by<sp/>setting<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>DOTFONTPATH<sp/>environment<sp/>variable<sp/>or<sp/>by<sp/>setting<sp/>DOT_FONTPATH<sp/>to<sp/>the<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>containing<sp/>the<sp/>font.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_FONTNAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>FreeSans</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>DOT_FONTSIZE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>set<sp/>the<sp/>size<sp/>of<sp/>the<sp/>font<sp/>of<sp/>dot<sp/>graphs.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>size<sp/>is<sp/>10pt.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_FONTSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>By<sp/>default<sp/>doxygen<sp/>will<sp/>tell<sp/>dot<sp/>to<sp/>use<sp/>the<sp/>output<sp/>directory<sp/>to<sp/>look<sp/>for<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>FreeSans.ttf<sp/>font<sp/>(which<sp/>doxygen<sp/>will<sp/>put<sp/>there<sp/>itself).<sp/>If<sp/>you<sp/>specify<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>different<sp/>font<sp/>using<sp/>DOT_FONTNAME<sp/>you<sp/>can<sp/>set<sp/>the<sp/>path<sp/>where<sp/>dot</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>can<sp/>find<sp/>it<sp/>using<sp/>this<sp/>tag.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_FONTPATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CLASS_GRAPH<sp/>and<sp/>HAVE_DOT<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>generate<sp/>a<sp/>graph<sp/>for<sp/>each<sp/>documented<sp/>class<sp/>showing<sp/>the<sp/>direct<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>indirect<sp/>inheritance<sp/>relations.<sp/>Setting<sp/>this<sp/>tag<sp/>to<sp/>YES<sp/>will<sp/>force<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>CLASS_DIAGRAMS<sp/>tag<sp/>to<sp/>NO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CLASS_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>COLLABORATION_GRAPH<sp/>and<sp/>HAVE_DOT<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>generate<sp/>a<sp/>graph<sp/>for<sp/>each<sp/>documented<sp/>class<sp/>showing<sp/>the<sp/>direct<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>indirect<sp/>implementation<sp/>dependencies<sp/>(inheritance,<sp/>containment,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>class<sp/>references<sp/>variables)<sp/>of<sp/>the<sp/>class<sp/>with<sp/>other<sp/>documented<sp/>classes.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">COLLABORATION_GRAPH<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GROUP_GRAPHS<sp/>and<sp/>HAVE_DOT<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>generate<sp/>a<sp/>graph<sp/>for<sp/>groups,<sp/>showing<sp/>the<sp/>direct<sp/>groups<sp/>dependencies</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GROUP_GRAPHS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>UML_LOOK<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>doxygen<sp/>will<sp/>generate<sp/>inheritance<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>collaboration<sp/>diagrams<sp/>in<sp/>a<sp/>style<sp/>similar<sp/>to<sp/>the<sp/>OMG&apos;s<sp/>Unified<sp/>Modeling</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Language.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">UML_LOOK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>set<sp/>to<sp/>YES,<sp/>the<sp/>inheritance<sp/>and<sp/>collaboration<sp/>graphs<sp/>will<sp/>show<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>relations<sp/>between<sp/>templates<sp/>and<sp/>their<sp/>instances.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">TEMPLATE_RELATIONS<sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ENABLE_PREPROCESSING,<sp/>SEARCH_INCLUDES,<sp/>INCLUDE_GRAPH,<sp/>and<sp/>HAVE_DOT</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>graph<sp/>for<sp/>each<sp/>documented</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>file<sp/>showing<sp/>the<sp/>direct<sp/>and<sp/>indirect<sp/>include<sp/>dependencies<sp/>of<sp/>the<sp/>file<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>other<sp/>documented<sp/>files.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INCLUDE_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ENABLE_PREPROCESSING,<sp/>SEARCH_INCLUDES,<sp/>INCLUDED_BY_GRAPH,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>HAVE_DOT<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>graph<sp/>for<sp/>each</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documented<sp/>header<sp/>file<sp/>showing<sp/>the<sp/>documented<sp/>files<sp/>that<sp/>directly<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>indirectly<sp/>include<sp/>this<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">INCLUDED_BY_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CALL_GRAPH<sp/>and<sp/>HAVE_DOT<sp/>options<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>call<sp/>dependency<sp/>graph<sp/>for<sp/>every<sp/>global<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>or<sp/>class<sp/>method.<sp/>Note<sp/>that<sp/>enabling<sp/>this<sp/>option<sp/>will<sp/>significantly<sp/>increase</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>time<sp/>of<sp/>a<sp/>run.<sp/>So<sp/>in<sp/>most<sp/>cases<sp/>it<sp/>will<sp/>be<sp/>better<sp/>to<sp/>enable<sp/>call<sp/>graphs</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>for<sp/>selected<sp/>functions<sp/>only<sp/>using<sp/>the<sp/>\callgraph<sp/>command.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CALL_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CALLER_GRAPH<sp/>and<sp/>HAVE_DOT<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>caller<sp/>dependency<sp/>graph<sp/>for<sp/>every<sp/>global<sp/>function</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>or<sp/>class<sp/>method.<sp/>Note<sp/>that<sp/>enabling<sp/>this<sp/>option<sp/>will<sp/>significantly<sp/>increase</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>time<sp/>of<sp/>a<sp/>run.<sp/>So<sp/>in<sp/>most<sp/>cases<sp/>it<sp/>will<sp/>be<sp/>better<sp/>to<sp/>enable<sp/>caller</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>graphs<sp/>for<sp/>selected<sp/>functions<sp/>only<sp/>using<sp/>the<sp/>\callergraph<sp/>command.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CALLER_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GRAPHICAL_HIERARCHY<sp/>and<sp/>HAVE_DOT<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>doxygen</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>will<sp/>graphical<sp/>hierarchy<sp/>of<sp/>all<sp/>classes<sp/>instead<sp/>of<sp/>a<sp/>textual<sp/>one.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GRAPHICAL_HIERARCHY<sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>DIRECTORY_GRAPH,<sp/>SHOW_DIRECTORIES<sp/>and<sp/>HAVE_DOT<sp/>tags<sp/>are<sp/>set<sp/>to<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>then<sp/>doxygen<sp/>will<sp/>show<sp/>the<sp/>dependencies<sp/>a<sp/>directory<sp/>has<sp/>on<sp/>other<sp/>directories</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>in<sp/>a<sp/>graphical<sp/>way.<sp/>The<sp/>dependency<sp/>relations<sp/>are<sp/>determined<sp/>by<sp/>the<sp/>#include</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>relations<sp/>between<sp/>the<sp/>files<sp/>in<sp/>the<sp/>directories.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DIRECTORY_GRAPH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>DOT_IMAGE_FORMAT<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>set<sp/>the<sp/>image<sp/>format<sp/>of<sp/>the<sp/>images</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generated<sp/>by<sp/>dot.<sp/>Possible<sp/>values<sp/>are<sp/>png,<sp/>jpg,<sp/>or<sp/>gif</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>left<sp/>blank<sp/>png<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_IMAGE_FORMAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>png</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>tag<sp/>DOT_PATH<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>path<sp/>where<sp/>the<sp/>dot<sp/>tool<sp/>can<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>found.<sp/>If<sp/>left<sp/>blank,<sp/>it<sp/>is<sp/>assumed<sp/>the<sp/>dot<sp/>tool<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the<sp/>path.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_PATH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>DOTFILE_DIRS<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>one<sp/>or<sp/>more<sp/>directories<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>contain<sp/>dot<sp/>files<sp/>that<sp/>are<sp/>included<sp/>in<sp/>the<sp/>documentation<sp/>(see<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>\dotfile<sp/>command).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOTFILE_DIRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>DOT_GRAPH_MAX_NODES<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>set<sp/>the<sp/>maximum<sp/>number<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>nodes<sp/>that<sp/>will<sp/>be<sp/>shown<sp/>in<sp/>the<sp/>graph.<sp/>If<sp/>the<sp/>number<sp/>of<sp/>nodes<sp/>in<sp/>a<sp/>graph</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>becomes<sp/>larger<sp/>than<sp/>this<sp/>value,<sp/>doxygen<sp/>will<sp/>truncate<sp/>the<sp/>graph,<sp/>which<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>visualized<sp/>by<sp/>representing<sp/>a<sp/>node<sp/>as<sp/>a<sp/>red<sp/>box.<sp/>Note<sp/>that<sp/>doxygen<sp/>if<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>number<sp/>of<sp/>direct<sp/>children<sp/>of<sp/>the<sp/>root<sp/>node<sp/>in<sp/>a<sp/>graph<sp/>is<sp/>already<sp/>larger<sp/>than</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>DOT_GRAPH_MAX_NODES<sp/>then<sp/>the<sp/>graph<sp/>will<sp/>not<sp/>be<sp/>shown<sp/>at<sp/>all.<sp/>Also<sp/>note</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>the<sp/>size<sp/>of<sp/>a<sp/>graph<sp/>can<sp/>be<sp/>further<sp/>restricted<sp/>by<sp/>MAX_DOT_GRAPH_DEPTH.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_GRAPH_MAX_NODES<sp/><sp/><sp/><sp/>=<sp/>50</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>MAX_DOT_GRAPH_DEPTH<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>set<sp/>the<sp/>maximum<sp/>depth<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>graphs<sp/>generated<sp/>by<sp/>dot.<sp/>A<sp/>depth<sp/>value<sp/>of<sp/>3<sp/>means<sp/>that<sp/>only<sp/>nodes<sp/>reachable</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>from<sp/>the<sp/>root<sp/>by<sp/>following<sp/>a<sp/>path<sp/>via<sp/>at<sp/>most<sp/>3<sp/>edges<sp/>will<sp/>be<sp/>shown.<sp/>Nodes</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>that<sp/>lay<sp/>further<sp/>from<sp/>the<sp/>root<sp/>node<sp/>will<sp/>be<sp/>omitted.<sp/>Note<sp/>that<sp/>setting<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>option<sp/>to<sp/>1<sp/>or<sp/>2<sp/>may<sp/>greatly<sp/>reduce<sp/>the<sp/>computation<sp/>time<sp/>needed<sp/>for<sp/>large</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>code<sp/>bases.<sp/>Also<sp/>note<sp/>that<sp/>the<sp/>size<sp/>of<sp/>a<sp/>graph<sp/>can<sp/>be<sp/>further<sp/>restricted<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>DOT_GRAPH_MAX_NODES.<sp/>Using<sp/>a<sp/>depth<sp/>of<sp/>0<sp/>means<sp/>no<sp/>depth<sp/>restriction.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MAX_DOT_GRAPH_DEPTH<sp/><sp/><sp/><sp/>=<sp/>0</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>DOT_TRANSPARENT<sp/>tag<sp/>to<sp/>YES<sp/>to<sp/>generate<sp/>images<sp/>with<sp/>a<sp/>transparent</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>background.<sp/>This<sp/>is<sp/>disabled<sp/>by<sp/>default,<sp/>because<sp/>dot<sp/>on<sp/>Windows<sp/>does<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>seem<sp/>to<sp/>support<sp/>this<sp/>out<sp/>of<sp/>the<sp/>box.<sp/>Warning:<sp/>Depending<sp/>on<sp/>the<sp/>platform<sp/>used,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>enabling<sp/>this<sp/>option<sp/>may<sp/>lead<sp/>to<sp/>badly<sp/>anti-aliased<sp/>labels<sp/>on<sp/>the<sp/>edges<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>a<sp/>graph<sp/>(i.e.<sp/>they<sp/>become<sp/>hard<sp/>to<sp/>read).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_TRANSPARENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>DOT_MULTI_TARGETS<sp/>tag<sp/>to<sp/>YES<sp/>allow<sp/>dot<sp/>to<sp/>generate<sp/>multiple<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>files<sp/>in<sp/>one<sp/>run<sp/>(i.e.<sp/>multiple<sp/>-o<sp/>and<sp/>-T<sp/>options<sp/>on<sp/>the<sp/>command<sp/>line).<sp/>This</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>makes<sp/>dot<sp/>run<sp/>faster,<sp/>but<sp/>since<sp/>only<sp/>newer<sp/>versions<sp/>of<sp/>dot<sp/>(&gt;1.8.10)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>support<sp/>this,<sp/>this<sp/>feature<sp/>is<sp/>disabled<sp/>by<sp/>default.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_MULTI_TARGETS<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>NO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_LEGEND<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>generate<sp/>a<sp/>legend<sp/>page<sp/>explaining<sp/>the<sp/>meaning<sp/>of<sp/>the<sp/>various<sp/>boxes<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>arrows<sp/>in<sp/>the<sp/>dot<sp/>generated<sp/>graphs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">GENERATE_LEGEND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>DOT_CLEANUP<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>(the<sp/>default)<sp/>Doxygen<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>remove<sp/>the<sp/>intermediate<sp/>dot<sp/>files<sp/>that<sp/>are<sp/>used<sp/>to<sp/>generate</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>various<sp/>graphs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DOT_CLEANUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>YES</highlight></codeline>
+    </programlisting>
+    <location file="Doxyfile"/>
+  </compounddef>
+</doxygen>

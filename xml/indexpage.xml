@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>clusterThis mantra geometry instancer</title>
+    <innerpage refid="overview">clusterThis Overview</innerpage>
+    <innerpage refid="faq">Frequently Asked Questions</innerpage>
+    <innerpage refid="exampleScenes">clusterThis Cookbook</innerpage>
+    <innerpage refid="changes">Release Notes</innerpage>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <bold>clusterThis</bold> mantra geometry instancing procedural DSO/OTL will instance geometry to incoming points and will process the point attributes in a number of ways for the instanced geometry. Delays geomtery instantiation until render time thus, reduces size of IFD file and network bandwidth, allows access to render time data, add additional detail to scene.</para>
+<para><bold>Features:</bold> <itemizedlist>
+<listitem><para>Instance primitives at render time (sphere, cube, grid, tube, circle, curve, metaball) </para>
+</listitem>
+<listitem><para>Instance disk file (and apply CVEX deformation and attribute processing) </para>
+</listitem>
+<listitem><para>Open VDB post processing of instanced geometry and it&apos;s attributes </para>
+</listitem>
+<listitem><para>Motion blur </para>
+</listitem>
+<listitem><para>CVEX processing of instanced geometry </para>
+</listitem>
+<listitem><para>Cache file stores data when generating deep shadow maps to optimize instancing.</para>
+</listitem>
+</itemizedlist>
+<bold>clusterThis</bold> is maintained by <ulink url="http://www.digitalcinemaarts.com/software/">Digital Cinema Arts</ulink> and was developed primarily by<itemizedlist>
+<listitem><para>Debra Peri</para>
+</listitem></itemizedlist>
+</para>
+<para>See the <ref refid="overview" kindref="compound">Overview</ref> for an introduction to clusterThis.</para>
+<para>See the <ref refid="faq" kindref="compound">FAQ</ref> for frequently asked questions about <bold>clusterThis</bold>.</para>
+<para>See the <ref refid="exampleScenes" kindref="compound">Examples</ref> for examples of <bold>clusterThis</bold>.</para>
+<para>See the <ref refid="changes" kindref="compound">Release Notes</ref> for what&apos;s new in this version of <bold>clusterThis</bold>. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

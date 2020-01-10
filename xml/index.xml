@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="changes_8txt" kind="file"><name>changes.txt</name>
+  </compound>
+  <compound refid="doc_8txt" kind="file"><name>doc.txt</name>
+  </compound>
+  <compound refid="Doxyfile" kind="file"><name>Doxyfile</name>
+  </compound>
+  <compound refid="example__scenes_8txt" kind="file"><name>example_scenes.txt</name>
+  </compound>
+  <compound refid="faq_8txt" kind="file"><name>faq.txt</name>
+  </compound>
+  <compound refid="faq" kind="page"><name>faq</name>
+  </compound>
+  <compound refid="overview" kind="page"><name>overview</name>
+  </compound>
+  <compound refid="changes" kind="page"><name>changes</name>
+  </compound>
+  <compound refid="exampleScenes" kind="page"><name>exampleScenes</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

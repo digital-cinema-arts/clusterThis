@@ -23,54 +23,16 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "clusterThis", "index.html", [
-    [ "clusterThis mantra geometry instancer", "index.html", null ],
-    [ "Frequently Asked Questions", "faq.html", [
-      [ "Contents", "faq.html#Contents", null ],
-      [ "What is clusterThis?", "faq.html#sWhatIsClusterThis", null ],
-      [ "What license is clusterThis distributed under?", "faq.html#sWhatLicense", null ],
-      [ "How can I contribute to clusterThis?", "faq.html#sContribute", null ]
-    ] ],
-    [ "clusterThis Overview", "overview.html", [
-      [ "Parameters", "overview.html#secParameters", null ],
-      [ "Installation", "overview.html#secInstall", null ],
-      [ "Notes", "overview.html#secNotes", null ],
-      [ "secDesignNotes", "overview.html#secDesignNotes", null ],
-      [ "Debug Tips", "overview.html#secDebugTips", null ]
-    ] ],
-    [ "Release Notes", "changes.html", null ],
-    [ "clusterThis Cookbook", "exampleScenes.html", [
-      [ "Point Instancing", "exampleScenes.html#sPointInstancing", null ],
-      [ "Primitive Instancing", "exampleScenes.html#sPrimitiveInstancing", null ],
-      [ "File Instancing", "exampleScenes.html#sFileInstancing", null ]
-    ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
-      ] ]
-    ] ],
+    [ "clusterThis mantra geometry instancer", "index.html", "index" ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"Doxyfile.html",
-"classVRAY__clusterThis.html#af52f7622e420120687c3ad8b9ea22661"
+"Doxyfile.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

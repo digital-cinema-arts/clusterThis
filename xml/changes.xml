@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="changes" kind="page">
+    <compoundname>changes</compoundname>
+    <title>Release Notes</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title></title><para><bold>Version 2.0.317</bold> - <emphasis>November 11 2012</emphasis> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

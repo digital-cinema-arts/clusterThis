@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="faq_8txt" kind="file" language="C++">
+    <compoundname>faq.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">@page<sp/>faq<sp/>Frequently<sp/>Asked<sp/>Questions</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">@section<sp/>Contents</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">-<sp/>@ref<sp/>sWhatIsClusterThis</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">-<sp/>@ref<sp/>sWhatLicense</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">-<sp/>@ref<sp/>sContribute</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">@section<sp/>sWhatIsClusterThis<sp/>What<sp/>is<sp/>clusterThis?</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">The<sp/>@b<sp/>clusterThis<sp/>mantra<sp/>geometry<sp/>instancing<sp/>procedural<sp/>DSO/OTL<sp/>will<sp/>instance<sp/>geometry<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">incoming<sp/>points<sp/>and<sp/>will<sp/>process<sp/>the<sp/>point<sp/>attributes<sp/>in<sp/>a<sp/>number<sp/>of<sp/>ways<sp/>for<sp/>the<sp/>instanced<sp/>geometry.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">Delays<sp/>geomtery<sp/>instantiation<sp/>until<sp/>render<sp/>time<sp/>thus,<sp/>reduces<sp/>size<sp/>of<sp/>IFD<sp/>file<sp/>and<sp/>network<sp/>bandwidth,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">allows<sp/>access<sp/>to<sp/>render<sp/>time<sp/>data,<sp/>add<sp/>additional<sp/>detail<sp/>to<sp/>scene.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">@section<sp/>sWhatLicense<sp/>What<sp/>license<sp/>is<sp/>clusterThis<sp/>distributed<sp/>under?</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">TO<sp/>BE<sp/>DONE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">@section<sp/>sContribute<sp/>How<sp/>can<sp/>I<sp/>contribute<sp/>to<sp/>clusterThis?</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">If<sp/>you<sp/>have<sp/>bug<sp/>reports<sp/>or<sp/>ideas<sp/>for<sp/>improvements<sp/>or<sp/>new<sp/>features,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">please<sp/>contact<sp/>us!</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="faq.txt"/>
+  </compounddef>
+</doxygen>

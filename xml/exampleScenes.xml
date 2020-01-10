@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="exampleScenes" kind="page">
+    <compoundname>exampleScenes</compoundname>
+    <title>clusterThis Cookbook</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="exampleScenes_1Contents">
+<title>Contents</title>
+<para><itemizedlist>
+<listitem><para><ref refid="exampleScenes_1sPointInstancing" kindref="member">Point Instancing</ref></para>
+</listitem><listitem><para><ref refid="exampleScenes_1sPrimitiveInstancing" kindref="member">Primitive Instancing</ref></para>
+</listitem><listitem><para><ref refid="exampleScenes_1sFileInstancing" kindref="member">File Instancing</ref></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="exampleScenes_1sPointInstancing">
+<title>Point Instancing</title>
+<para><ulink url="https://vimeo.com/55141948">Simple Point Instancing w/Open VDB</ulink></para>
+</sect1>
+<sect1 id="exampleScenes_1sPrimitiveInstancing">
+<title>Primitive Instancing</title>
+</sect1>
+<sect1 id="exampleScenes_1sFileInstancing">
+<title>File Instancing</title>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
