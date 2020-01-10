@@ -1,10 +1,12 @@
-/**
-@mainpage clusterThis mantra geometry instancer
+
+### clusterThis mantra geometry instancer
 
 The @b clusterThis mantra geometry instancing procedural DSO/OTL will instance geometry to
 incoming points and will process the point attributes in a number of ways for the instanced geometry.
 Delays geomtery instantiation until render time thus, reduces size of IFD file and network bandwidth,
-allows access to render time data, add additional detail to scene.
+allows access to render time data, add additional detail to scene. 
+
+--------------------------------------------------------------------
 
 @b Features:
 @li Instance primitives at render time (sphere, cube, grid, tube, circle, curve, metaball)
@@ -14,10 +16,7 @@ allows access to render time data, add additional detail to scene.
 @li CVEX processing of instanced geometry
 @li Cache file stores data when generating deep shadow maps to optimize instancing.
 
-@b clusterThis is maintained by
-<A TARGET=_blank HREF="http://www.digitalcinemaarts.com/software/">Digital Cinema Arts</A>
-and was developed primarily by
-- Debra Peri
+--------------------------------------------------
 
 See the @subpage overview "Overview" for an introduction to clusterThis.
 
@@ -106,6 +105,7 @@ geometry will be instanced at one time
 @li Save the geometry in a temp cache file (for optimization)
 @li Save temp cache file: 	Do not delete cache file (to save the temp geometry cache file for later use)
 
+-----------------------------------------------------------------------
 
 @section secInstall Installation
 
