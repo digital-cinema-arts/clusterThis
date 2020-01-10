@@ -20,9 +20,20 @@ allows access to render time data, add additional detail to scene.
  
  
  
-[Example #1](https://vimeo.com/55999099)
+[Example #1 video](https://vimeo.com/55999099)
 
-[Example #2](https://vimeo.com/55141948)
+
+![picture alt](https://github.com/digital-cinema-arts/clusterThis/blob/master/images/example%201.1.png "Example #1")
+![picture alt](https://github.com/digital-cinema-arts/clusterThis/blob/master/images/example%201.2.png "Example #1")
+![picture alt](https://github.com/digital-cinema-arts/clusterThis/blob/master/images/example%201.3.png "Example #1")
+![picture alt](https://github.com/digital-cinema-arts/clusterThis/blob/master/images/example%201.4.png "Example #1")
+
+
+
+
+
+
+[Example #2 video](https://vimeo.com/55141948)
  
 
  
